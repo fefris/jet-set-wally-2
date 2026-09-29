@@ -1,0 +1,18 @@
+{
+  "comment": "Script load order. '@data' expands to every .js file under src/data (sorted). Entries with browser:true are skipped by headless Node tools.",
+  "scripts": [
+    "src/core/registry.js",
+    "src/render/screen.js",
+    "src/engine/room.js",
+    "src/engine/willy.js",
+    "src/engine/entities.js",
+    "src/engine/world.js",
+    "src/engine/game.js",
+    "src/render/text.js",
+    "src/render/draw.js",
+    "src/render/title.js",
+    "src/audio/beeper.js",
+    "@data",
+    { "file": "src/main.js", "browser": true }
+  ]
+}

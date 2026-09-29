@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jet Set Wally II</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+</style>
+</head>
+<body>
+<canvas id="screen" width="320" height="240"></canvas>
+<script src="src/core/registry.js"></script>
+<script src="src/render/screen.js"></script>
+<script src="src/engine/room.js"></script>
+<script src="src/engine/willy.js"></script>
+<script src="src/engine/entities.js"></script>
+<script src="src/engine/world.js"></script>
+<script src="src/engine/game.js"></script>
+<script src="src/render/text.js"></script>
+<script src="src/render/draw.js"></script>
+<script src="src/render/title.js"></script>
+<script src="src/audio/beeper.js"></script>
+<script src="src/data/font.js"></script>
+<script src="src/data/items.js"></script>
+<script src="src/data/rooms/cellars_well.js"></script>
+<script src="src/data/rooms/coast.js"></script>
+<script src="src/data/rooms/grounds_tree.js"></script>
+<script src="src/data/rooms/grounds_village.js"></script>
+<script src="src/data/rooms/mansion_first.js"></script>
+<script src="src/data/rooms/mansion_ground.js"></script>
+<script src="src/data/rooms/mansion_lower.js"></script>
+<script src="src/data/rooms/mansion_top.js"></script>
+<script src="src/data/rooms/mines_ending.js"></script>
+<script src="src/data/rooms/planet.js"></script>
+<script src="src/data/rooms/roof.js"></script>
+<script src="src/data/rooms/sewers.js"></script>
+<script src="src/data/rooms/starship_a.js"></script>
+<script src="src/data/rooms/starship_b.js"></script>
+<script src="src/data/sprites/mansion.js"></script>
+<script src="src/data/sprites/misc.js"></script>
+<script src="src/data/sprites/nature.js"></script>
+<script src="src/data/sprites/sea.js"></script>
+<script src="src/data/sprites/space.js"></script>
+<script src="src/data/sprites/special.js"></script>
+<script src="src/data/sprites/underground.js"></script>
+<script src="src/data/tiles.js"></script>
+<script src="src/data/tunes.js"></script>
+<script src="src/main.js"></script>
+<script>JSW.boot();</script>
+</body>
+</html>

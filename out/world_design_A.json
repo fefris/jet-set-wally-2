@@ -1,0 +1,3510 @@
+{
+ "title": "Jet Set Wally II - World Design A (flow-first)",
+ "grid": {
+  "cols": 26,
+  "rows": 19
+ },
+ "start": {
+  "room": "the_bathroom"
+ },
+ "itemsTotal": 175,
+ "itemsRequired": 150,
+ "rooms": [
+  {
+   "id": "nursery_crimes",
+   "name": "Nursery Crimes",
+   "region": "mansion",
+   "pos": [
+    8,
+    9
+   ],
+   "items": 2,
+   "difficulty": 1,
+   "theme": "Pastel nursery: rocking-horse ramp, toy-box steps and a cot; the back stairs leave through the floor at the far left. Guardians: toy_soldier (h) marching the floor, jack_in_box (v) by the cot. Items on the toy shelf - the first \"jump up two cells\" lesson."
+  },
+  {
+   "id": "bed_and_no_breakfast",
+   "name": "Bed & No Breakfast",
+   "region": "mansion",
+   "pos": [
+    9,
+    9
+   ],
+   "items": 2,
+   "difficulty": 1,
+   "theme": "Chintzy guest room with two brass beds as springboard platforms and a washstand. Guardians: teapot (v) steaming over the washstand, cat (h) on the bedspread. Item on a bedpost."
+  },
+  {
+   "id": "airing_dirty_linen",
+   "name": "Airing Dirty Linen",
+   "region": "mansion",
+   "pos": [
+    10,
+    9
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "Linen cupboard of slatted shelves (one-way floors) stepping up to the attic staircase that leaves through the ceiling top-right. Guardians: toilet_roll (h) unrolling along a shelf. Item on the top shelf beside the stairs."
+  },
+  {
+   "id": "master_bedroom",
+   "name": "Master Bedroom",
+   "region": "mansion",
+   "pos": [
+    11,
+    9
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Grand bedroom: the four-poster bed (a right conveyor) at the east end with Mrs Mop the housekeeper (maid sprite) standing guard; a picture-rail walkway lets Wally pass over her to the landing. Guardians: vacuum (h) on the rug. Item on the dressing table.",
+   "special": "Housekeeper: Mrs Mop (maid) blocks the bed until 150 items are collected, then leaves. Touching the bed afterwards starts the forced run right (4 px/frame, no jumping) through Landing on Your Feet and Dressed to Kill to the toilet in The Bathroom."
+  },
+  {
+   "id": "landing_on_your_feet",
+   "name": "Landing on Your Feet",
+   "region": "mansion",
+   "pos": [
+    12,
+    9
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "LANDMARK top of the grand staircase (the central column of the house): the upper flight rises through the floor at centre; a chandelier ledge at row 5 (with a chain ledge at row 9) catches Wally when he drops through the loose attic boards above. Guardians: pendulum (grandfather clock). Item on the chandelier.",
+   "special": "Forced-run-right path after winning: keep a jump-free walkable route from the west door to the east door (ramps and short drops only)."
+  },
+  {
+   "id": "dressed_to_kill",
+   "name": "Dressed to Kill",
+   "region": "mansion",
+   "pos": [
+    13,
+    9
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Dressing room of wardrobes and hat stands. Guardians: shaver (h) along the dressing table, hand (v, a floating evening glove). Item on top of a wardrobe, reached from a hat stand.",
+   "special": "Forced-run-right path after winning (jump-free route west door -> east door)."
+  },
+  {
+   "id": "the_bathroom",
+   "name": "The Bathroom",
+   "region": "mansion",
+   "pos": [
+    14,
+    9
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "START ROOM. Bath, basin and the all-important toilet on the right; flat tiled floor both ways for the first steps. Guardians: rubber_duck (v) bobbing over the bath, slow and easy to time. One item on the towel rail teaches collecting.",
+   "special": "Start room (Wally starts on the floor facing left). Arrival point of the starship home teleport. After winning, touching the toilet sends Wally to Nightmare on Wally Street."
+  },
+  {
+   "id": "tank_top",
+   "name": "Tank Top",
+   "region": "mansion",
+   "pos": [
+    15,
+    9
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Airing cupboard around a huge lagged hot-water tank: lagging jackets are platforms, a leaking pipe drips nasties, and a ladder ledge at row 3 reaches the loft hatch in the ceiling (one-way climb into the attic). Guardians: spider (v) on a thread. Item on top of the tank."
+  },
+  {
+   "id": "backstairs_gossip",
+   "name": "Backstairs Gossip",
+   "region": "mansion",
+   "pos": [
+    8,
+    10
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "Narrow servants' stairwell: one flight up to the Nursery (top left), one down to Mind the Step (bottom right). Guardians: maid (h) on the middle landing. Item tucked under the stairs."
+  },
+  {
+   "id": "rogues_gallery",
+   "name": "The Rogues' Gallery",
+   "region": "mansion",
+   "pos": [
+    9,
+    10
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "Long portrait gallery with a balcony at row 7 (upper door into the library gallery) above the main floor. Guardians: ghost (v) drifting past the portraits, knight (h) on the floor. Items behind picture frames on the balcony."
+  },
+  {
+   "id": "shelf_life",
+   "name": "Shelf Life",
+   "region": "mansion",
+   "pos": [
+    10,
+    10
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "Library of tall bookcases forming staircase platforms, a rolling-ladder ramp and an upper gallery linking west. Guardians: flying_book x2 (diagonal). Items on the top shelves."
+  },
+  {
+   "id": "pot_black",
+   "name": "Pot Black",
+   "region": "mansion",
+   "pos": [
+    11,
+    10
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "Snooker room: a huge green table is the main platform, its pockets are nasties, cue racks are ledges. Guardians: dice (h) rolling along the cushion, candle (v) over the scoreboard. Item on the scoreboard."
+  },
+  {
+   "id": "neither_up_nor_down",
+   "name": "Neither Up Nor Down",
+   "region": "mansion",
+   "pos": [
+    12,
+    10
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "LANDMARK half-landing of the grand staircase: the lower flight arrives from the Great Hall (right) and the upper flight climbs on to the top landing (left-centre), under a giant portrait of the Grand Old Duke. Guardians: toy_soldier (h) marching the landing. Item on the newel post."
+  },
+  {
+   "id": "haydn_seek",
+   "name": "Haydn Seek",
+   "region": "mansion",
+   "pos": [
+    13,
+    10
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "Music room: grand piano (keyboard platform, lid as a ramp), harp and music stands. Guardians: pendulum (metronome), flying_book (diagonal, sheet music). Items inside the piano lid and on top of the harp."
+  },
+  {
+   "id": "swotting_up",
+   "name": "Swotting Up",
+   "region": "mansion",
+   "pos": [
+    14,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Study with a big desk, globe and bookcases; the conservatory's creeper pokes up through a hole in the floor (arrival from the rope below; a gap beside it lets Wally drop back). Guardians: clockwork_mouse (h) on the desk. Item on the globe."
+  },
+  {
+   "id": "sun_lounge_lizard",
+   "name": "Sun Lounge Lizard",
+   "region": "mansion",
+   "pos": [
+    15,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Sunny lounge of wicker chairs; French windows open east onto the raised topiary terrace (second way into the grounds). Guardians: cat (h) basking on the rug. Item on the window seat."
+  },
+  {
+   "id": "mind_the_step",
+   "name": "Mind the Step",
+   "region": "mansion",
+   "pos": [
+    8,
+    11
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "Foot of the back stairs (flight rises top-right): a broken step (nasty) and a mop bucket. Guardians: rat (h) along the skirting board. Item on the coat hook."
+  },
+  {
+   "id": "stuffed",
+   "name": "Stuffed!",
+   "region": "mansion",
+   "pos": [
+    9,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Trophy room of mounted heads, glass cases and a stuffed bear used as platforms. Guardians: owl (v, stuffed and swooping), fox (h). Item hanging on the antlers."
+  },
+  {
+   "id": "just_desserts",
+   "name": "Just Desserts",
+   "region": "mansion",
+   "pos": [
+    10,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Dining room with a long table and candelabras; the dumb-waiter hatch at the right-hand end (gap in the floor at cols 28-30) drops to the scullery lift. Guardians: plate (h) and champagne (v) dancing on the table. Item on the candelabra.",
+   "special": "Dumb waiter: the scullery lift below rises to a ledge under this room; Wally drops back through the hatch."
+  },
+  {
+   "id": "ballroom_blitz",
+   "name": "Ballroom Blitz",
+   "region": "mansion",
+   "pos": [
+    11,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Sprung dance floor of alternating conveyors under a mirror-ball chandelier. Guardians: butler (h) waltzing, champagne (v) popping corks. Item hanging from the chandelier chain."
+  },
+  {
+   "id": "the_great_hall",
+   "name": "The Great Hall",
+   "region": "mansion",
+   "pos": [
+    12,
+    11
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "LANDMARK hub: double-height hall; the grand staircase climbs to the half-landing (right), the servants' stairs go down (left), wide doors east and west. Guardians: knight (h), slow - the first 'jump over a guardian' test. Item on the mantelpiece."
+  },
+  {
+   "id": "drawing_a_blank",
+   "name": "Drawing a Blank",
+   "region": "mansion",
+   "pos": [
+    13,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Drawing room of easels and a huge blank canvas on a plinth. Guardians: hand (diagonal, a painter's glove), cat (h). Item on the picture rail."
+  },
+  {
+   "id": "people_in_glasshouses",
+   "name": "People in Glasshouses",
+   "region": "mansion",
+   "pos": [
+    14,
+    11
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "Conservatory of palms and cast-iron benches; a giant creeper (rope) climbs through the glass roof into the study above. Guardians: flytrap (v), butterfly (diagonal). Items in the palm fronds."
+  },
+  {
+   "id": "knock_knock",
+   "name": "Knock Knock, Who's There?",
+   "region": "mansion",
+   "pos": [
+    15,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Vestibule: the great front door stands open east onto the porch (GATE 1 to the grounds); coat stands and an umbrella stand. Guardians: butler (h) guarding the door - a timing test using the jump taught upstairs. Item on the hat stand."
+  },
+  {
+   "id": "das_boot_room",
+   "name": "Das Boot Room",
+   "region": "mansion",
+   "pos": [
+    8,
+    12
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Boot room lined with wellies; the old door to the cliffs is bricked up (sealed west), cellar steps descend at the right. Guardians: roller_skate (h), rat (h). Item in a wellington."
+  },
+  {
+   "id": "dirty_laundry",
+   "name": "Dirty Laundry",
+   "region": "mansion",
+   "pos": [
+    9,
+    12
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Laundry with a mangle, washing lines (one-way floors) and a giant stone sink whose plughole is the DRAIN into the sewers. Guardians: bubble (v) rising from the sink, maid (h) with a basket. Item on the washing line.",
+   "special": "Drain: stepping into the plughole (bottom of the sink, cols 14-15) flushes Wally one-way to Down the Plughole (sewers)."
+  },
+  {
+   "id": "bubble_and_squeak",
+   "name": "Bubble and Squeak",
+   "region": "mansion",
+   "pos": [
+    10,
+    12
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Scullery of steaming sinks and plate racks; the dumb-waiter lift at the right rises to a ledge under the dining-room hatch. Guardians: rat (h), plate (v). Item on the plate rack.",
+   "special": "Lift (JSW II): dumb-waiter car cols 28-30, rows 13 <-> 3, under the opening to Just Desserts."
+  },
+  {
+   "id": "too_many_cooks",
+   "name": "Too Many Cooks",
+   "region": "mansion",
+   "pos": [
+    11,
+    12
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Kitchen: ranges with fire nasties, hanging pans as platforms and a long scrubbed table. Guardians: chef (h, speed 2), teapot (v) over the stove. Items on the pan rack."
+  },
+  {
+   "id": "upstairs_downstairs",
+   "name": "Upstairs, Downstairs",
+   "region": "mansion",
+   "pos": [
+    12,
+    12
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "LANDMARK servants' hall under the Great Hall (GATE 2 into the working half of the house): a bell board of flashing bells, the servants' stairs rising at the left. Guardians: butler (h). Item on the bell board."
+  },
+  {
+   "id": "silver_service",
+   "name": "Silver Service",
+   "region": "mansion",
+   "pos": [
+    13,
+    12
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Plate room of silver cabinets as step platforms. Guardians: champagne (v), plate (h). Item: a silver candlestick on the top cabinet."
+  },
+  {
+   "id": "boiling_point",
+   "name": "Boiling Point",
+   "region": "mansion",
+   "pos": [
+    14,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Boiler room: a huge boiler, hissing pipes (nasties) and a floor grate at cols 10-12 that drops one-way into the cellar junk store (shortcut to the trip switch). Guardians: fan (v). Item on top of the boiler."
+  },
+  {
+   "id": "old_king_coal",
+   "name": "Old King Coal",
+   "region": "mansion",
+   "pos": [
+    15,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Coal hole: heaps of coal as ramps climbing to a high coal chute (east wall, rows 5-7) that opens onto the Allotment. Guardians: rat (h), boulder (v, a lump of coal). Item at the mouth of the chute."
+  },
+  {
+   "id": "loft_conversion",
+   "name": "Loft Conversion",
+   "region": "roof",
+   "pos": [
+    9,
+    8
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Half-converted loft: stacked tea chests climb to a skylight in the ceiling (ledge at row 3, one-way climb onto the roof - GATE 4 begins here). Guardians: spider (v), bat (h). Item on the top chest."
+  },
+  {
+   "id": "mind_your_head",
+   "name": "Mind Your Head",
+   "region": "roof",
+   "pos": [
+    10,
+    8
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Low-beamed attic landing where the attic stairs arrive from the linen cupboard; the beams are walls, so Wally hops between them. Guardians: bat (h). Item between two beams."
+  },
+  {
+   "id": "cistern_chapel",
+   "name": "Cistern Chapel",
+   "region": "roof",
+   "pos": [
+    11,
+    8
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Water tanks under a painted ceiling of cherubs; tank lids are platforms, overflow pipes drip nasties. Guardians: rubber_duck (v), ghost (h) as a cherub. Item on a tank lid."
+  },
+  {
+   "id": "raising_the_rafters",
+   "name": "Raising the Rafters",
+   "region": "roof",
+   "pos": [
+    12,
+    8
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Open rafters with loose floorboards at cols 20-22 that give way one-way onto the landing chandelier below (quick way home). Guardians: bat (diagonal), owl (v). Item up in the rafters."
+  },
+  {
+   "id": "moths_to_a_flame",
+   "name": "Moths to a Flame",
+   "region": "roof",
+   "pos": [
+    13,
+    8
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Clothes store of trunks and mothballs lit by candles (flame nasties). Guardians: butterfly x2 (diagonal, playing moths). Items in open trunks."
+  },
+  {
+   "id": "signal_failure",
+   "name": "Signal Failure",
+   "region": "roof",
+   "pos": [
+    14,
+    8
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Model railway on trestle tables; the chimney from the roof above drops Wally in at cols 10-11 onto the station roof (row 5). Guardians: trolley (h) as the toy train, toy_soldier (h) as the stationmaster. Items on the station platforms."
+  },
+  {
+   "id": "hatch_match_and_dispatch",
+   "name": "Hatch, Match and Dispatch",
+   "region": "roof",
+   "pos": [
+    15,
+    8
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Loft-hatch room where a wedding dress, a cot and a coffin are stored together; Wally arrives up the ladder from Tank Top onto a solid hatch floor. Guardians: ghost (v), spider (v). Item on the coffin lid."
+  },
+  {
+   "id": "tiles_and_tribulations",
+   "name": "Tiles and Tribulations",
+   "region": "roof",
+   "pos": [
+    9,
+    7
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "West end of the roof: the skylight arrival, then slipping-tile ramps along the gable. Guardians: seagull (h). Item on the gable finial."
+  },
+  {
+   "id": "gutter_snipe",
+   "name": "Gutter Snipe",
+   "region": "roof",
+   "pos": [
+    10,
+    7
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Gutter walkway; the bell rope hangs down from the belfry above, reaching the top edge. Guardians: bird (h), bird (v). Item beside the rope."
+  },
+  {
+   "id": "stack_em_high",
+   "name": "Stack 'Em High",
+   "region": "roof",
+   "pos": [
+    11,
+    7
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "A forest of chimney stacks (walls) with chimney pots as stepping stones; ledges lead up onto the ridge (upper door east). Guardians: bat (v), seagull (h). Items on the chimney pots."
+  },
+  {
+   "id": "walking_on_thin_slate",
+   "name": "Walking on Thin Slate",
+   "region": "roof",
+   "pos": [
+    12,
+    7
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "LANDMARK ridge of the roof: crumbling slates and the clock-tower stairs rising at centre. Guardians: seagull (diagonal), bird (h). Item on the ridge tiles."
+  },
+  {
+   "id": "which_way_the_wind_blows",
+   "name": "Which Way the Wind Blows",
+   "region": "roof",
+   "pos": [
+    13,
+    7
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Weathervane and TV aerials; the ridge steps down to the east gutter. Guardians: leaf (diagonal), balloon (v). Items on the aerials."
+  },
+  {
+   "id": "flash_harry",
+   "name": "Flash Harry",
+   "region": "roof",
+   "pos": [
+    14,
+    7
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Lead flashing around a big chimney - the flashing cells alternate deadly/safe; the chimney pot at cols 10-11 is a one-way drop into the attic railway. Guardians: seagull (h). Item beside the chimney.",
+   "special": "Flashing nasties (JSW II): the lead-flashing cells are nasty only while lit."
+  },
+  {
+   "id": "parapet_shop_boys",
+   "name": "Parapet Shop Boys",
+   "region": "roof",
+   "pos": [
+    15,
+    7
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "East parapet with battlements; stone stairs climb to the silo tower. Guardians: pogo (v), bird (h). Item on a merlon."
+  },
+  {
+   "id": "for_whom_the_bell_tolls",
+   "name": "For Whom the Bell Tolls",
+   "region": "towers",
+   "pos": [
+    10,
+    6
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Belfry: a giant bell swinging over bell-frame platforms; the bell rope hangs down into the gutter below. Guardians: pendulum (the bell), bat x2 (h, v). Items on the bell frame."
+  },
+  {
+   "id": "time_gentlemen_please",
+   "name": "Time Gentlemen Please",
+   "region": "towers",
+   "pos": [
+    12,
+    6
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "LANDMARK clock tower innards: gear wheels as platforms, cog conveyors and the back of the clock face. Guardians: pendulum, hourglass (v), clockwork_mouse (h). Items on the clock hands."
+  },
+  {
+   "id": "countdown_conundrum",
+   "name": "Countdown Conundrum",
+   "region": "towers",
+   "pos": [
+    15,
+    6
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Mission control at the base of the silo: consoles and a big countdown clock; a shaft rises into the silo. Guardians: robot (h), astronaut (v). Items on the consoles."
+  },
+  {
+   "id": "ground_control_to_major_wal",
+   "name": "Ground Control to Major Wal",
+   "region": "towers",
+   "pos": [
+    15,
+    5
+   ],
+   "items": 3,
+   "difficulty": 5,
+   "theme": "LANDMARK rocket silo (GATE 4 to space): a rocket on its gantry with ramps and a capsule door. Guardians: laser_drone (h), comet (diagonal), satellite (v). Three items around the gantry.",
+   "special": "Rocket: once all 3 items in this room are collected, stepping into the capsule (cols 14-17, rows 12-14) launches the rocket (clock stops in flight) and lands Wally one-way in Reverse Parking in Orbit (starship)."
+  },
+  {
+   "id": "brandy_for_the_parson",
+   "name": "Brandy for the Parson",
+   "region": "cellars",
+   "pos": [
+    7,
+    13
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Smugglers' tunnel of brandy kegs lit by a lantern; rock steps climb to the Cliff Hanger (GATE 3 to the coast). Guardians: barrel (h) rolling, lantern (v). Items in the kegs."
+  },
+  {
+   "id": "the_wine_cellar",
+   "name": "The Wine Cellar",
+   "region": "cellars",
+   "pos": [
+    8,
+    13
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Wine racks forming ladders of one-way floors; the cellar steps from the Boot Room arrive top-right. Guardians: champagne (v), rat (h). Item in a bottle rack."
+  },
+  {
+   "id": "chateau_plonk",
+   "name": "Chateau Plonk",
+   "region": "cellars",
+   "pos": [
+    9,
+    13
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Vats and a wine press. Guardians: crusher (v) as the press, barrel (h). Item on a vat lid."
+  },
+  {
+   "id": "skeleton_staff",
+   "name": "Skeleton Staff",
+   "region": "cellars",
+   "pos": [
+    10,
+    13
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Old servants' crypt where the skeleton staff still work; a sloping adit (stairs) descends to the mines. Guardians: skeleton (h) carrying a tray, skull (v). Items on the coffin shelves."
+  },
+  {
+   "id": "down_in_the_dumps",
+   "name": "Down in the Dumps",
+   "region": "cellars",
+   "pos": [
+    11,
+    13
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Junk dump with heaps of rubbish as ramps. Guardians: rat (h, speed 2), trolley (h). Item on an old mangle."
+  },
+  {
+   "id": "cold_comfort_cellar",
+   "name": "Cold Comfort Cellar",
+   "region": "cellars",
+   "pos": [
+    12,
+    13
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Ice house: slabs of ice and icicles (nasties); a solid ice wall seals the east side, so the east cellars must be reached another way. Guardians: penguin (h). Item frozen on a high shelf."
+  },
+  {
+   "id": "rat_race",
+   "name": "Rat Race",
+   "region": "cellars",
+   "pos": [
+    13,
+    13
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Maze of pipes and rat runs. Guardians: rat x3 (h, speed 2). Items in the pipe bends."
+  },
+  {
+   "id": "everything_but_the_kitchen_sink",
+   "name": "Everything but the Kitchen Sink",
+   "region": "cellars",
+   "pos": [
+    14,
+    13
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Junk store: the boiler grate drops Wally in from above onto a shelf at row 5, and a hole in the floor is where the climb from the echo cave arrives. Guardians: saw (h), jack_in_box (v). Item in the kitchen sink."
+  },
+  {
+   "id": "flick_of_the_switch",
+   "name": "Flick of the Switch",
+   "region": "cellars",
+   "pos": [
+    15,
+    13
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "LANDMARK: a massive fuse board with a big red lever; sparks arc across it. Guardians: beam (v) x2 as sparks. Item on top of the fuse board.",
+   "special": "Trip switch: touching the lever throws it (permanent, survives death); the harbour lights come on and the yacht may sail."
+  },
+  {
+   "id": "tunnel_vision",
+   "name": "Tunnel Vision",
+   "region": "cellars",
+   "pos": [
+    16,
+    13
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Long brick tunnel ending in an iron ladder up to a manhole in the Allotment (ledge at row 3, one-way climb out). Guardians: mole (h), lantern (v). Item at the far end."
+  },
+  {
+   "id": "pit_stop",
+   "name": "Pit Stop",
+   "region": "mines",
+   "pos": [
+    10,
+    14
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Mine entrance where the adit arrives from the crypt; a mine-cart track conveyor. Guardians: minecart (h). Item on a lamp hook."
+  },
+  {
+   "id": "face_value",
+   "name": "Face Value",
+   "region": "mines",
+   "pos": [
+    11,
+    14
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Coal face with pit props; a rope hangs down a shaft into Canary Wharf below. Guardians: miner_bot (h), pickaxe (v). Items in the coal seams."
+  },
+  {
+   "id": "glow_worm_disco",
+   "name": "Glow Worm Disco",
+   "region": "mines",
+   "pos": [
+    12,
+    14
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Cave lit by glowworms with a flashing \"disco\" floor. Guardians: glowworm (h), cave_bat (diagonal). Items on stalagmites.",
+   "special": "Flashing nasties (JSW II): disco floor tiles are deadly only while lit."
+  },
+  {
+   "id": "drip_feed",
+   "name": "Drip Feed",
+   "region": "mines",
+   "pos": [
+    13,
+    14
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Stalactite cavern. Guardians: drip x2 (v), stalactite (v). Items between the stalactites."
+  },
+  {
+   "id": "hello_hello_hello",
+   "name": "Hello Hello Hello",
+   "region": "mines",
+   "pos": [
+    14,
+    14
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Echo cave; a high ledge at row 3 under a hole lets Wally climb up into the junk store (one-way). Guardians: ghost_miner (h). Item on the ledge."
+  },
+  {
+   "id": "canary_wharf",
+   "name": "Canary Wharf",
+   "region": "mines",
+   "pos": [
+    11,
+    15
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Flooded mine dock with floating crates and a canary cage; the rope climbs back to the coal face. Guardians: bird (v, the canary), cave_spider (v). Items on the crates."
+  },
+  {
+   "id": "deep_pan_pit",
+   "name": "Deep Pan Pit",
+   "region": "mines",
+   "pos": [
+    12,
+    15
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Deep pit ringed with ledges. Guardians: crusher (v), boulder (h). Item on the bottom ledge."
+  },
+  {
+   "id": "wind_up_merchant",
+   "name": "Wind Up Merchant",
+   "region": "mines",
+   "pos": [
+    13,
+    15
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Winding gear: a big wheel over the well mouth, the bucket rope hanging down into the well. Guardians: clockwork_mouse (h), spring (v). Item on the wheel."
+  },
+  {
+   "id": "well_i_never",
+   "name": "Well I Never",
+   "region": "well",
+   "pos": [
+    13,
+    16
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Top of the well shaft: mossy brick with ledges and the bucket rope reaching up to the winding gear. Guardians: frog (v). Item on a ledge."
+  },
+  {
+   "id": "well_hard",
+   "name": "Well Hard",
+   "region": "well",
+   "pos": [
+    13,
+    17
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "The deep middle shaft: narrow ledges beside the rope - and the COMIC FATAL DROP: step off the open side and Wally plummets through the bottom room with a splash. Guardians: drip (v), bat (h). Items on the ledges.",
+   "special": "Fatal-drop gag: falling down the open side is always fatal (the fall counter survives the room change); respawn is on the last safe ledge in this room, never mid-air."
+  },
+  {
+   "id": "alls_well_that_ends",
+   "name": "All's Well That Ends",
+   "region": "well",
+   "pos": [
+    13,
+    18
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Bottom of the well: deep water (nasty) with stepping stones; the bucket rope leads back up. Guardians: frog (h), coin (v, wishing-well pennies). Item on a stone."
+  },
+  {
+   "id": "wipe_your_feet",
+   "name": "Wipe Your Feet!",
+   "region": "grounds",
+   "pos": [
+    16,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Front porch with a doormat conveyor and garden steps up to the topiary terrace. Guardians: hedgehog (h). Item on the porch lamp."
+  },
+  {
+   "id": "driveway_to_distraction",
+   "name": "Driveway to Distraction",
+   "region": "grounds",
+   "pos": [
+    17,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Gravel drive with a parked vintage car as a platform. Guardians: lawnmower (h), penny_farthing (h). Item on the car roof."
+  },
+  {
+   "id": "trees_a_crowd",
+   "name": "Tree's a Crowd",
+   "region": "grounds",
+   "pos": [
+    18,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "LANDMARK foot of the Giant Tree: a colossal trunk with a hollow opening (way up, inside) and a root hole (way down). Guardians: squirrel (v), dog (h). Item in a knot hole."
+  },
+  {
+   "id": "gatecrasher",
+   "name": "Gatecrasher",
+   "region": "grounds",
+   "pos": [
+    19,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Gatehouse and wrought-iron gates beside the porter's lodge. Guardians: dog (h), gnome (v). Item on a gate post."
+  },
+  {
+   "id": "up_the_creek",
+   "name": "Up the Creek",
+   "region": "grounds",
+   "pos": [
+    20,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Riverbank of reeds and a moored punt (the river is deadly). Guardians: frog (v), bee (diagonal). Item in the reeds."
+  },
+  {
+   "id": "bridge_over_the_river_wye",
+   "name": "Bridge Over the River Wye",
+   "region": "grounds",
+   "pos": [
+    21,
+    11
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Humpback stone bridge of ramps over a deadly river; a ladder runs down the pier to the troll below. Guardians: fish (v) leaping, bird (h). Items on the parapets."
+  },
+  {
+   "id": "open_all_hours",
+   "name": "Open All Hours",
+   "region": "grounds",
+   "pos": [
+    22,
+    11
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "LANDMARK corner shop at the far east end of the world: sweet jars on shelves, a snapping till drawer (nasty), stairs up to the flat. Guardians: trolley (h), coin (v). Items: sweets on the shelves."
+  },
+  {
+   "id": "living_above_the_shop",
+   "name": "Living Above the Shop",
+   "region": "grounds",
+   "pos": [
+    22,
+    10
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The shopkeeper's flat: telly, budgie cage and armchair. Guardians: parrot (v), cat (h). Item on top of the telly."
+  },
+  {
+   "id": "trunk_call",
+   "name": "Trunk Call",
+   "region": "grounds",
+   "pos": [
+    18,
+    10
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Inside the hollow trunk: a red phone box wedged in the wood, fungus ledges, and a rope up to the fork. Guardians: caterpillar (h), worm (v). Item in the phone box."
+  },
+  {
+   "id": "fork_handles",
+   "name": "Fork Handles",
+   "region": "grounds",
+   "pos": [
+    18,
+    9
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "The great fork where the trunk splits: boughs lead west and east, and a high ledge climbs into the canopy. Guardians: squirrel (h), owl (v). Items in the crook of the fork."
+  },
+  {
+   "id": "bough_wow_wow",
+   "name": "Bough Wow Wow",
+   "region": "grounds",
+   "pos": [
+    17,
+    9
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "West bough: a long branch over the hedge maze (arrival from the hedge-top climb). Guardians: bird (h), bee (diagonal). Item on a twig."
+  },
+  {
+   "id": "branching_out",
+   "name": "Branching Out",
+   "region": "grounds",
+   "pos": [
+    19,
+    9
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "East bough of thin twigs (one-way floors) overhanging the gatehouse. Guardians: caterpillar (h), bee (diagonal). Items dangling from the twigs."
+  },
+  {
+   "id": "leaf_it_out",
+   "name": "Leaf It Out",
+   "region": "grounds",
+   "pos": [
+    18,
+    8
+   ],
+   "items": 3,
+   "difficulty": 4,
+   "theme": "LANDMARK canopy of the Giant Tree - the highest point of the grounds: a sea of leaves (one-way floors). Guardians: leaf (diagonal), butterfly (diagonal), owl (v). Items on the topmost leaves."
+  },
+  {
+   "id": "rook_line_and_sinker",
+   "name": "Rook, Line and Sinker",
+   "region": "grounds",
+   "pos": [
+    19,
+    8
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Rookery of big nests; a hole in the nest platform drops one-way to the east bough. Guardians: bird x2 (h, v). Item: an egg in a nest."
+  },
+  {
+   "id": "grass_roots",
+   "name": "Grass Roots",
+   "region": "grounds",
+   "pos": [
+    18,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Underground among the tree roots; the roots have burst through the greenhouse wall to the west. Guardians: mole (h), worm (v). Item tangled in the roots."
+  },
+  {
+   "id": "a_cut_above",
+   "name": "A Cut Above",
+   "region": "grounds",
+   "pos": [
+    16,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Raised topiary terrace: hedge peacocks as platforms, French windows west into the sun lounge, garden steps down to the porch. Guardians: gardener (h), saw (v) playing the shears. Item on a topiary peacock."
+  },
+  {
+   "id": "hedging_your_bets",
+   "name": "Hedging Your Bets",
+   "region": "grounds",
+   "pos": [
+    17,
+    10
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Hedge maze of green walls; the tallest hedge (ledge at row 3) lets Wally climb up into the west bough (one-way). Guardians: hedgehog (h), gnome (h). Items in the dead ends."
+  },
+  {
+   "id": "allotment_of_trouble",
+   "name": "Allotment of Trouble",
+   "region": "grounds",
+   "pos": [
+    16,
+    12
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Kitchen garden of veg rows and a scarecrow; the coal chute (upper left) leads into the coal hole and a manhole brings Wally up from the cellars. Guardians: watering_can (v), snail (h). Item: the prize marrow."
+  },
+  {
+   "id": "greenhouse_effect",
+   "name": "Greenhouse Effect",
+   "region": "grounds",
+   "pos": [
+    17,
+    12
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Steamy greenhouse; tree roots have burst through the east wall. Guardians: flytrap (v), bee (diagonal). Items: tomatoes on the vines."
+  },
+  {
+   "id": "troll_booth",
+   "name": "Troll Booth",
+   "region": "grounds",
+   "pos": [
+    21,
+    12
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Under the bridge: a troll's toll booth on a strip of bank beside the deadly river. Guardians: frog (h), fish (v). Item: the toll money."
+  },
+  {
+   "id": "cliff_hanger",
+   "name": "Cliff Hanger",
+   "region": "coast",
+   "pos": [
+    7,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Zigzag cliff path from the smugglers' tunnel (rock steps at the right) down to the beach; crumbling ledges. Guardians: seagull (diagonal). Item on a gorse bush."
+  },
+  {
+   "id": "lifes_a_beach",
+   "name": "Life's a Beach",
+   "region": "coast",
+   "pos": [
+    6,
+    12
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "LANDMARK beach: sand, deckchairs and a sandcastle; the sewer outfall pipe juts from the cliff and dumps Wally on the sand. Guardians: crab (h), beach_ball (v). Items buried in the sand.",
+   "special": "Arrival point of the sewer outfall (safe landing on the sand)."
+  },
+  {
+   "id": "end_of_the_pier_show",
+   "name": "End of the Pier Show",
+   "region": "coast",
+   "pos": [
+    5,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Pier with a Punch-and-Judy stage and slot machines; the gangplank to the yacht is at the far west. Guardians: seagull (h), sailor (h). Item on the stage."
+  },
+  {
+   "id": "mutiny_on_the_bounty_bar",
+   "name": "Mutiny on the Bounty Bar",
+   "region": "coast",
+   "pos": [
+    4,
+    12
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Yacht stern and cabin: ramps between decks, a galley and the captain's bunk. Guardians: sailor (h), parrot (v). Items in the galley."
+  },
+  {
+   "id": "the_pointy_end",
+   "name": "The Pointy End",
+   "region": "coast",
+   "pos": [
+    3,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Yacht bow: figurehead, anchor winch and rigging ramps; the far side is open sea. Guardians: anchor (v), lifebuoy (h). Item by the figurehead.",
+   "special": "Yacht: once Flick of the Switch has been thrown AND the items in both yacht rooms are collected, walking to the figurehead makes the yacht sail one-way to Desert Island Discs."
+  },
+  {
+   "id": "all_at_sea",
+   "name": "All at Sea",
+   "region": "coast",
+   "pos": [
+    2,
+    12
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Open sea: buoys bobbing as platforms over deadly water; the yacht's hull seals the east side, so it is reached only by wading out from the island. Guardians: shark (h), jellyfish (v), octopus (v). Item on a buoy."
+  },
+  {
+   "id": "desert_island_discs",
+   "name": "Desert Island Discs",
+   "region": "coast",
+   "pos": [
+    1,
+    12
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "LANDMARK island at the far west: a palm tree, a gramophone and a straw hut hiding a teleport pad. Guardians: turtle (h), crab (h), seagull (v). Items in the palm and on the gramophone.",
+   "special": "Arrival point of the yacht voyage. Teleport pad inside the hut: one-way to Airlock, Stock and Barrel (starship)."
+  },
+  {
+   "id": "down_the_plughole",
+   "name": "Down the Plughole",
+   "region": "sewers",
+   "pos": [
+    5,
+    15
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Arrival: Wally drops out of a pipe mouth onto a walkway above the flow. Guardians: rat (h), bubble (v). Item on a pipe.",
+   "special": "Arrival point of the laundry drain (lands on the walkway at row 13)."
+  },
+  {
+   "id": "effluent_society",
+   "name": "Effluent Society",
+   "region": "sewers",
+   "pos": [
+    4,
+    15
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Main sewer: walkways over a foul stream (nasty). Guardians: slime (h), rubber_duck (v). Items on the walkways."
+  },
+  {
+   "id": "spaghetti_junction",
+   "name": "Spaghetti Junction",
+   "region": "sewers",
+   "pos": [
+    3,
+    15
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Tangle of pipes: a shaft up to the manhole and another down to the sump. Guardians: rat (h), tentacle (v). Item in the pipe knot."
+  },
+  {
+   "id": "manhole_cover_story",
+   "name": "Manhole Cover Story",
+   "region": "sewers",
+   "pos": [
+    3,
+    14
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Ladder shaft up to a manhole cover that will not budge (dead end). Guardians: spider (v), drip (v). Items on the rungs."
+  },
+  {
+   "id": "sump_thing_nasty",
+   "name": "Sump Thing Nasty",
+   "region": "sewers",
+   "pos": [
+    3,
+    16
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "The sump: deep sludge (nasty) crossed on stepping pipes. Guardians: slime (h), blob (v). Item on the drain grille."
+  },
+  {
+   "id": "pipe_dreams",
+   "name": "Pipe Dreams",
+   "region": "sewers",
+   "pos": [
+    2,
+    15
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Big-bore pipes curving like ramps. Guardians: bubble (v), rat (h). Item at the top of a pipe curve."
+  },
+  {
+   "id": "going_with_the_flow",
+   "name": "Going With the Flow",
+   "region": "sewers",
+   "pos": [
+    1,
+    15
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The outfall: a grille in the west wall opens to flush Wally out to sea. Guardians: fish (v), rat (h). Item by the grille.",
+   "special": "Outfall: walking into the grille (west end) transports Wally one-way to Life's a Beach."
+  },
+  {
+   "id": "ready_room_steady_go",
+   "name": "Ready Room, Steady, Go!",
+   "region": "starship",
+   "pos": [
+    11,
+    0
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Captain's ready room: fish tank, desk and a tea dispenser. Guardians: robo_dog (h), star (v). Item on the desk."
+  },
+  {
+   "id": "where_no_wally_has_gone_before",
+   "name": "Where No Wally Has Gone Before",
+   "region": "starship",
+   "pos": [
+    12,
+    0
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "LANDMARK bridge: captain's chair, viewscreen and consoles; the turbolift hatch arrives from below at centre. Guardians: robot (h), alien_head (v) on the viewscreen. Items on the consoles."
+  },
+  {
+   "id": "are_we_there_yet",
+   "name": "Are We There Yet?",
+   "region": "starship",
+   "pos": [
+    13,
+    0
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Navigation room with a live star-chart wall map of every room Wally has visited. Guardians: satellite (v), ringed_planet (h). Item on the chart table.",
+   "special": "Decorative live map of visited rooms (green = cleared, red = items left)."
+  },
+  {
+   "id": "wally_phone_home",
+   "name": "Wally Phone Home",
+   "region": "starship",
+   "pos": [
+    14,
+    0
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Communications: dishes and blinking panels. Guardians: ufo (h), beam (v). Item on a dish."
+  },
+  {
+   "id": "airlock_stock_and_barrel",
+   "name": "Airlock, Stock and Barrel",
+   "region": "starship",
+   "pos": [
+    8,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Aft airlock with spacesuit racks and the arrival pad from the island. Guardians: astronaut (v), barrel (h) floating. Item on the suit rack.",
+   "special": "Arrival point of the island teleport."
+  },
+  {
+   "id": "i_cannae_hold_her_captain",
+   "name": "I Cannae Hold Her, Captain!",
+   "region": "starship",
+   "pos": [
+    9,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Engine room: pistons and drive-belt conveyors. Guardians: crusher (v), laser_drone (h). Item between the pistons."
+  },
+  {
+   "id": "warp_factor_tea",
+   "name": "Warp Factor Tea",
+   "region": "starship",
+   "pos": [
+    10,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Warp core with a giant teapot at its heart; a maintenance hatch (cols 8-10) drops one-way into the cargo hold. Guardians: teapot (v), comet (diagonal). Item on the core."
+  },
+  {
+   "id": "galactic_greasy_spoon",
+   "name": "Galactic Greasy Spoon",
+   "region": "starship",
+   "pos": [
+    11,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Mess hall cafe with a chrome counter. Guardians: chef (h), blob (v) wobbling like jelly. Item on the counter."
+  },
+  {
+   "id": "mind_the_doors_please",
+   "name": "Mind the Doors, Please",
+   "region": "starship",
+   "pos": [
+    12,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "LANDMARK central turbolift: a lift carries Wally up to the bridge hatch; a drop shaft at the right continues down to the lower deck. Guardians: robot (h). Item in the lift car.",
+   "special": "Lift (JSW II): car cols 14-17 between rows 13 and 3, under the opening to the bridge."
+  },
+  {
+   "id": "hot_bunking_in_hyperspace",
+   "name": "Hot Bunking in Hyperspace",
+   "region": "starship",
+   "pos": [
+    13,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Crew quarters of stacked bunks. Guardians: alien_walker (h), star (v). Item on the top bunk."
+  },
+  {
+   "id": "please_mind_your_molecules",
+   "name": "Please Mind Your Molecules",
+   "region": "starship",
+   "pos": [
+    14,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "LANDMARK transporter room: three pads - west pad to the planet, east pad home to The Bathroom, and the centre arrival pad from the planet. Guardians: beam (v) x2. Item above the home pad.",
+   "special": "Teleports: west pad -> One Small Step for Wally (planet); east pad -> The Bathroom (home, the only way back from space). Arrival point of the planet return pad."
+  },
+  {
+   "id": "blinded_me_with_science",
+   "name": "Blinded Me With Science",
+   "region": "starship",
+   "pos": [
+    15,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Laboratory of bubbling flasks; gangway stairs lead down to the docking bay. Guardians: eyeball (v), blob (h). Item on the bench."
+  },
+  {
+   "id": "space_cabbage_patch",
+   "name": "Space Cabbage Patch",
+   "region": "starship",
+   "pos": [
+    16,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Hydroponics bay of alien cabbages in trays. Guardians: flytrap (v), tentacle (v). Item in a tray."
+  },
+  {
+   "id": "nice_view_shame_about_the_void",
+   "name": "Nice View, Shame About the Void",
+   "region": "starship",
+   "pos": [
+    17,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Observation deck at the prow: a huge window of stars. Guardians: comet (diagonal), star (h). Item on the rail."
+  },
+  {
+   "id": "hold_everything",
+   "name": "Hold Everything!",
+   "region": "starship",
+   "pos": [
+    10,
+    2
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Cargo hold of crates; arrival shelf (row 5) under the warp-core hatch. Guardians: moon_buggy (h), robot (v). Item on the crates."
+  },
+  {
+   "id": "porridge_in_orbit",
+   "name": "Porridge in Orbit",
+   "region": "starship",
+   "pos": [
+    11,
+    2
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Brig with flashing force-field bars. Guardians: alien_head (v). Item in a cell.",
+   "special": "Flashing nasties (JSW II): force-field bars are deadly only while lit."
+  },
+  {
+   "id": "going_down_haberdashery",
+   "name": "Going Down, Haberdashery",
+   "region": "starship",
+   "pos": [
+    12,
+    2
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Bottom of the lift shaft and lower-deck junction; a ledge stack climbs back up the shaft. Guardians: robo_dog (h). Item on a ledge."
+  },
+  {
+   "id": "doctor_doctor_i_feel_spacey",
+   "name": "Doctor Doctor, I Feel Spacey",
+   "region": "starship",
+   "pos": [
+    13,
+    2
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Sick bay: beds and a body scanner. Guardians: eyeball (h), robot (v). Item on a bed."
+  },
+  {
+   "id": "droid_rage",
+   "name": "Droid Rage",
+   "region": "starship",
+   "pos": [
+    14,
+    2
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "Robot workshop: assembly-line conveyors. Guardians: robot (h), laser_drone (h), robo_dog (h). Items on the line."
+  },
+  {
+   "id": "reverse_parking_in_orbit",
+   "name": "Reverse Parking in Orbit",
+   "region": "starship",
+   "pos": [
+    15,
+    2
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Docking bay where the rocket from the silo docks; gangway stairs climb to the lab. Guardians: astronaut (h), satellite (v). Item on the gantry.",
+   "special": "Arrival point of the rocket (safe floor)."
+  },
+  {
+   "id": "one_small_step_for_wally",
+   "name": "One Small Step for Wally",
+   "region": "planet",
+   "pos": [
+    20,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Arrival pad on a crater-pocked plain under a ringed planet. Guardians: alien_walker (h), moon_buggy (h). Item on a rock.",
+   "special": "Arrival point of the starship planet pad."
+  },
+  {
+   "id": "crater_expectations",
+   "name": "Crater Expectations",
+   "region": "planet",
+   "pos": [
+    21,
+    1
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Craters of acid (nasties) between rock mesas. Guardians: space_slug (h), comet (diagonal). Items on the mesas."
+  },
+  {
+   "id": "take_me_to_your_leader",
+   "name": "Take Me to Your Leader",
+   "region": "planet",
+   "pos": [
+    22,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Alien village of dome huts; the way east is a sheer cliff (sealed), so Wally drops through a hole in the ground into the hive. Guardians: alien_head (v), tripod (h). Item on a dome."
+  },
+  {
+   "id": "blob_save_the_queen",
+   "name": "Blob Save the Queen",
+   "region": "planet",
+   "pos": [
+    22,
+    2
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "Underground hive: honeycomb platforms and the blob queen. Guardians: blob (h), slime (v). Items in the cells."
+  },
+  {
+   "id": "mind_the_gap_earthling",
+   "name": "Mind the Gap, Earthling",
+   "region": "planet",
+   "pos": [
+    23,
+    2
+   ],
+   "items": 1,
+   "difficulty": 5,
+   "theme": "A huge cavern hole; a tentacle vine (rope) climbs to the jungle above. Guardians: tentacle (v), eyeball (h). Item on a ledge."
+  },
+  {
+   "id": "day_of_the_trifles",
+   "name": "Day of the Trifles",
+   "region": "planet",
+   "pos": [
+    23,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Jungle of wobbling trifle-plants; the vine drops back down the hole. Guardians: flytrap (v), tripod (h). Item in a trifle."
+  },
+  {
+   "id": "hot_springs_eternal",
+   "name": "Hot Springs Eternal",
+   "region": "planet",
+   "pos": [
+    24,
+    1
+   ],
+   "items": 1,
+   "difficulty": 5,
+   "theme": "Geysers and acid pools. Guardians: bubble (v) x2 as geysers, space_slug (h). Item on a geyser cone."
+  },
+  {
+   "id": "dont_panic",
+   "name": "Don't Panic!",
+   "region": "planet",
+   "pos": [
+    25,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Departure pad draped with a towel. Guardians: robot (h, gloomy), star (v). Item on the pad.",
+   "special": "Teleport pad: one-way to Please Mind Your Molecules (starship)."
+  },
+  {
+   "id": "nightmare_on_wally_street",
+   "name": "Nightmare on Wally Street",
+   "region": "ending",
+   "offgrid": true,
+   "unreachableOk": true,
+   "items": 0,
+   "difficulty": 1,
+   "theme": "The nightmare: Wally wakes at a desk on a Monday morning - an open-plan office of filing cabinets, a clocking-in machine and a stack of in-trays - and jumps on the spot in horror.",
+   "special": "Ending room: entered only through the toilet in The Bathroom after winning; not playable. Wally jumps on the spot, then the results screen (time, rooms, items)."
+  }
+ ],
+ "doors": [
+  {
+   "a": "nursery_crimes",
+   "b": "bed_and_no_breakfast",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "bed_and_no_breakfast",
+   "b": "airing_dirty_linen",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "airing_dirty_linen",
+   "b": "master_bedroom",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "master_bedroom",
+   "b": "landing_on_your_feet",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15,
+   "note": "forced-run path"
+  },
+  {
+   "a": "landing_on_your_feet",
+   "b": "dressed_to_kill",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15,
+   "note": "forced-run path"
+  },
+  {
+   "a": "dressed_to_kill",
+   "b": "the_bathroom",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15,
+   "note": "forced-run path"
+  },
+  {
+   "a": "the_bathroom",
+   "b": "tank_top",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "backstairs_gossip",
+   "b": "rogues_gallery",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "rogues_gallery",
+   "b": "shelf_life",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15,
+   "note": "main floor"
+  },
+  {
+   "a": "rogues_gallery",
+   "b": "shelf_life",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    4,
+    6
+   ],
+   "floor": 7,
+   "note": "upper balcony / library gallery"
+  },
+  {
+   "a": "shelf_life",
+   "b": "pot_black",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "pot_black",
+   "b": "neither_up_nor_down",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "neither_up_nor_down",
+   "b": "haydn_seek",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "haydn_seek",
+   "b": "swotting_up",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "swotting_up",
+   "b": "sun_lounge_lizard",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "sun_lounge_lizard",
+   "b": "a_cut_above",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14,
+   "note": "French windows onto the raised terrace"
+  },
+  {
+   "a": "mind_the_step",
+   "b": "stuffed",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "stuffed",
+   "b": "just_desserts",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "just_desserts",
+   "b": "ballroom_blitz",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "ballroom_blitz",
+   "b": "the_great_hall",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_great_hall",
+   "b": "drawing_a_blank",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "drawing_a_blank",
+   "b": "people_in_glasshouses",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "people_in_glasshouses",
+   "b": "knock_knock",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "knock_knock",
+   "b": "wipe_your_feet",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15,
+   "note": "GATE 1: the front door"
+  },
+  {
+   "a": "das_boot_room",
+   "b": "dirty_laundry",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "dirty_laundry",
+   "b": "bubble_and_squeak",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "bubble_and_squeak",
+   "b": "too_many_cooks",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "too_many_cooks",
+   "b": "upstairs_downstairs",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "upstairs_downstairs",
+   "b": "silver_service",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "silver_service",
+   "b": "boiling_point",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "boiling_point",
+   "b": "old_king_coal",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "old_king_coal",
+   "b": "allotment_of_trouble",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    5,
+    7
+   ],
+   "floor": 8,
+   "note": "coal chute: high ledge in the coal hole, raised bed in the allotment"
+  },
+  {
+   "a": "nursery_crimes",
+   "b": "backstairs_gossip",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    2,
+    5
+   ],
+   "note": "back stairs upper flight: ramp rising left runs off the top of Backstairs Gossip and continues from row 15 in the Nursery"
+  },
+  {
+   "a": "landing_on_your_feet",
+   "b": "neither_up_nor_down",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    14,
+    17
+   ],
+   "note": "grand staircase upper flight (central column landmark)"
+  },
+  {
+   "a": "neither_up_nor_down",
+   "b": "the_great_hall",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    20,
+    23
+   ],
+   "note": "grand staircase lower flight"
+  },
+  {
+   "a": "backstairs_gossip",
+   "b": "mind_the_step",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    26,
+    29
+   ],
+   "note": "back stairs lower flight"
+  },
+  {
+   "a": "the_great_hall",
+   "b": "upstairs_downstairs",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    4,
+    7
+   ],
+   "note": "GATE 2: servants' stairs down"
+  },
+  {
+   "a": "just_desserts",
+   "b": "bubble_and_squeak",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    28,
+    30
+   ],
+   "note": "dumb waiter: gap in the dining-room row 15 at cols 28-30 (drop onto the lift car at row 5 or lower floor); the scullery lift rises to a ledge at row 3 under the opening"
+  },
+  {
+   "a": "swotting_up",
+   "b": "people_in_glasshouses",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    15,
+    17
+   ],
+   "note": "creeper rope in the conservatory reaches row 0 at col 16; the study floor has a gap at cols 15-17 beside it to drop back"
+  },
+  {
+   "a": "mind_your_head",
+   "b": "airing_dirty_linen",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    26,
+    29
+   ],
+   "note": "attic stairs (two-way)"
+  },
+  {
+   "a": "hatch_match_and_dispatch",
+   "b": "tank_top",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    8,
+    11
+   ],
+   "note": "loft ladder: ledge at row 3 in Tank Top under an opening in row 0; the hatch floor above is solid at row 15, so one-way up"
+  },
+  {
+   "a": "raising_the_rafters",
+   "b": "landing_on_your_feet",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    20,
+    22
+   ],
+   "note": "loose boards: gap in rafters row 15; lands on the chandelier ledge at row 5 of the landing (chain ledge at row 9, then floor) - one-way shortcut home"
+  },
+  {
+   "a": "das_boot_room",
+   "b": "the_wine_cellar",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    20,
+    23
+   ],
+   "note": "cellar steps down from the boot room"
+  },
+  {
+   "a": "boiling_point",
+   "b": "everything_but_the_kitchen_sink",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    10,
+    12
+   ],
+   "note": "boiler grate: gap in row 15; lands on a shelf at row 5 in the junk store"
+  },
+  {
+   "a": "loft_conversion",
+   "b": "mind_your_head",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "mind_your_head",
+   "b": "cistern_chapel",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "cistern_chapel",
+   "b": "raising_the_rafters",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "raising_the_rafters",
+   "b": "moths_to_a_flame",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "moths_to_a_flame",
+   "b": "signal_failure",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "signal_failure",
+   "b": "hatch_match_and_dispatch",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "tiles_and_tribulations",
+   "b": "gutter_snipe",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "gutter_snipe",
+   "b": "stack_em_high",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "stack_em_high",
+   "b": "walking_on_thin_slate",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    7,
+    9
+   ],
+   "floor": 10,
+   "note": "up on the ridge"
+  },
+  {
+   "a": "walking_on_thin_slate",
+   "b": "which_way_the_wind_blows",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    7,
+    9
+   ],
+   "floor": 10,
+   "note": "along the ridge"
+  },
+  {
+   "a": "which_way_the_wind_blows",
+   "b": "flash_harry",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "flash_harry",
+   "b": "parapet_shop_boys",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "tiles_and_tribulations",
+   "b": "loft_conversion",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    16,
+    18
+   ],
+   "note": "skylight: tea-chest ledge at row 3 under an opening in row 0; roof floor at row 15 above, one-way up"
+  },
+  {
+   "a": "flash_harry",
+   "b": "signal_failure",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    10,
+    11
+   ],
+   "note": "chimney: gap in row 15; lands on the station roof at row 5 in the attic railway"
+  },
+  {
+   "a": "for_whom_the_bell_tolls",
+   "b": "gutter_snipe",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    15,
+    17
+   ],
+   "note": "bell rope hangs in Gutter Snipe from row 0; belfry floor row 15 beside it with a gap to drop back"
+  },
+  {
+   "a": "time_gentlemen_please",
+   "b": "walking_on_thin_slate",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    12,
+    15
+   ],
+   "note": "spiral stairs into the clock tower"
+  },
+  {
+   "a": "countdown_conundrum",
+   "b": "parapet_shop_boys",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    6,
+    9
+   ],
+   "note": "stone stairs up to the silo tower"
+  },
+  {
+   "a": "ground_control_to_major_wal",
+   "b": "countdown_conundrum",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    14,
+    17
+   ],
+   "note": "silo shaft: gantry ledge at row 3 in mission control under an opening; gap in the silo row 15 to drop back to a landing at row 5"
+  },
+  {
+   "a": "brandy_for_the_parson",
+   "b": "the_wine_cellar",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_wine_cellar",
+   "b": "chateau_plonk",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "chateau_plonk",
+   "b": "skeleton_staff",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "skeleton_staff",
+   "b": "down_in_the_dumps",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "down_in_the_dumps",
+   "b": "cold_comfort_cellar",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "rat_race",
+   "b": "everything_but_the_kitchen_sink",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "everything_but_the_kitchen_sink",
+   "b": "flick_of_the_switch",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "flick_of_the_switch",
+   "b": "tunnel_vision",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "cliff_hanger",
+   "b": "brandy_for_the_parson",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    24,
+    27
+   ],
+   "note": "GATE 3: rock steps from the smugglers' tunnel up to the cliff path"
+  },
+  {
+   "a": "skeleton_staff",
+   "b": "pit_stop",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    6,
+    9
+   ],
+   "note": "sloping adit down to the mines"
+  },
+  {
+   "a": "everything_but_the_kitchen_sink",
+   "b": "hello_hello_hello",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    22,
+    24
+   ],
+   "note": "hole in the junk-store floor corner: ledge at row 3 in the echo cave; junk-store floor solid above, one-way up"
+  },
+  {
+   "a": "allotment_of_trouble",
+   "b": "tunnel_vision",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    14,
+    16
+   ],
+   "note": "manhole: ladder ledge at row 3 in the tunnel; manhole cover is solid floor above, one-way up"
+  },
+  {
+   "a": "pit_stop",
+   "b": "face_value",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "face_value",
+   "b": "glow_worm_disco",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "glow_worm_disco",
+   "b": "drip_feed",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "drip_feed",
+   "b": "hello_hello_hello",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "canary_wharf",
+   "b": "deep_pan_pit",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "deep_pan_pit",
+   "b": "wind_up_merchant",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "face_value",
+   "b": "canary_wharf",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    20,
+    22
+   ],
+   "note": "mine rope in Canary Wharf up to the coal face; gap beside it to drop back"
+  },
+  {
+   "a": "wind_up_merchant",
+   "b": "well_i_never",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    15,
+    17
+   ],
+   "note": "bucket rope from the winding gear down the well mouth"
+  },
+  {
+   "a": "well_i_never",
+   "b": "well_hard",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    15,
+    17
+   ],
+   "note": "bucket rope continues; ledges beside it"
+  },
+  {
+   "a": "well_hard",
+   "b": "alls_well_that_ends",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    15,
+    17
+   ],
+   "note": "bucket rope to the stepping stones; the open side of the shaft (cols 4-10) is the fatal gag drop"
+  },
+  {
+   "a": "wipe_your_feet",
+   "b": "driveway_to_distraction",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "driveway_to_distraction",
+   "b": "trees_a_crowd",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "trees_a_crowd",
+   "b": "gatecrasher",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "gatecrasher",
+   "b": "up_the_creek",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "up_the_creek",
+   "b": "bridge_over_the_river_wye",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14,
+   "note": "raised bank onto the bridge ramp"
+  },
+  {
+   "a": "bridge_over_the_river_wye",
+   "b": "open_all_hours",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14,
+   "note": "bridge ramp down to the shop step"
+  },
+  {
+   "a": "a_cut_above",
+   "b": "hedging_your_bets",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "bough_wow_wow",
+   "b": "fork_handles",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    12
+   ],
+   "floor": 13,
+   "note": "along the west bough"
+  },
+  {
+   "a": "fork_handles",
+   "b": "branching_out",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    12
+   ],
+   "floor": 13,
+   "note": "along the east bough"
+  },
+  {
+   "a": "leaf_it_out",
+   "b": "rook_line_and_sinker",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    8,
+    10
+   ],
+   "floor": 11,
+   "note": "canopy walk"
+  },
+  {
+   "a": "allotment_of_trouble",
+   "b": "greenhouse_effect",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "greenhouse_effect",
+   "b": "grass_roots",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15,
+   "note": "roots burst through the greenhouse wall"
+  },
+  {
+   "a": "a_cut_above",
+   "b": "wipe_your_feet",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    4,
+    7
+   ],
+   "note": "garden steps from the porch up to the terrace"
+  },
+  {
+   "a": "bough_wow_wow",
+   "b": "hedging_your_bets",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    20,
+    22
+   ],
+   "note": "tallest hedge: ledge at row 3 under an opening; bough floor solid above, one-way up"
+  },
+  {
+   "a": "trunk_call",
+   "b": "trees_a_crowd",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    14,
+    17
+   ],
+   "note": "hollow-trunk entrance: fungus ledge at row 3 in the tree foot under the opening; gap in the trunk floor to drop back (landing at row 5)"
+  },
+  {
+   "a": "fork_handles",
+   "b": "trunk_call",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    15,
+    17
+   ],
+   "note": "rope inside the hollow trunk up to the fork"
+  },
+  {
+   "a": "leaf_it_out",
+   "b": "fork_handles",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    12,
+    14
+   ],
+   "note": "high ledge at row 3 in the fork under a gap in the leaves; one-way up (canopy returns via the rookery)"
+  },
+  {
+   "a": "rook_line_and_sinker",
+   "b": "branching_out",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    6,
+    8
+   ],
+   "note": "hole in the nest platform; lands on a twig floor at row 5 of the east bough"
+  },
+  {
+   "a": "trees_a_crowd",
+   "b": "grass_roots",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    22,
+    24
+   ],
+   "note": "root hole: gap in the tree-foot floor, landing on a root at row 5; root ledge at row 3 to climb back"
+  },
+  {
+   "a": "bridge_over_the_river_wye",
+   "b": "troll_booth",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    8,
+    10
+   ],
+   "note": "ladder down the bridge pier: gap in the bridge deck, landing at row 5; ladder ledges to row 3 to climb back"
+  },
+  {
+   "a": "living_above_the_shop",
+   "b": "open_all_hours",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    24,
+    27
+   ],
+   "note": "shop stairs up to the flat"
+  },
+  {
+   "a": "desert_island_discs",
+   "b": "all_at_sea",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15,
+   "note": "wading out through the shallows"
+  },
+  {
+   "a": "the_pointy_end",
+   "b": "mutiny_on_the_bounty_bar",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    9,
+    12
+   ],
+   "floor": 13,
+   "note": "along the yacht deck"
+  },
+  {
+   "a": "mutiny_on_the_bounty_bar",
+   "b": "end_of_the_pier_show",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    9,
+    12
+   ],
+   "floor": 13,
+   "note": "gangplank"
+  },
+  {
+   "a": "end_of_the_pier_show",
+   "b": "lifes_a_beach",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14,
+   "note": "pier steps down to the sand"
+  },
+  {
+   "a": "lifes_a_beach",
+   "b": "cliff_hanger",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15,
+   "note": "foot of the cliff path"
+  },
+  {
+   "a": "going_with_the_flow",
+   "b": "pipe_dreams",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "pipe_dreams",
+   "b": "spaghetti_junction",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "spaghetti_junction",
+   "b": "effluent_society",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "effluent_society",
+   "b": "down_the_plughole",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "manhole_cover_story",
+   "b": "spaghetti_junction",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    14,
+    16
+   ],
+   "note": "ladder shaft: ladder ledges to row 3 in the junction; gap at the ladder foot to drop back, landing at row 5"
+  },
+  {
+   "a": "spaghetti_junction",
+   "b": "sump_thing_nasty",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    20,
+    22
+   ],
+   "note": "sump pipe: gap in the junction walkway, landing on a pipe at row 5; pipe stack to row 3 to climb back"
+  },
+  {
+   "a": "ready_room_steady_go",
+   "b": "where_no_wally_has_gone_before",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "where_no_wally_has_gone_before",
+   "b": "are_we_there_yet",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "are_we_there_yet",
+   "b": "wally_phone_home",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "airlock_stock_and_barrel",
+   "b": "i_cannae_hold_her_captain",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "i_cannae_hold_her_captain",
+   "b": "warp_factor_tea",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "warp_factor_tea",
+   "b": "galactic_greasy_spoon",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "galactic_greasy_spoon",
+   "b": "mind_the_doors_please",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "mind_the_doors_please",
+   "b": "hot_bunking_in_hyperspace",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "hot_bunking_in_hyperspace",
+   "b": "please_mind_your_molecules",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "please_mind_your_molecules",
+   "b": "blinded_me_with_science",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "blinded_me_with_science",
+   "b": "space_cabbage_patch",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "space_cabbage_patch",
+   "b": "nice_view_shame_about_the_void",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "hold_everything",
+   "b": "porridge_in_orbit",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "porridge_in_orbit",
+   "b": "going_down_haberdashery",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "going_down_haberdashery",
+   "b": "doctor_doctor_i_feel_spacey",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "doctor_doctor_i_feel_spacey",
+   "b": "droid_rage",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "droid_rage",
+   "b": "reverse_parking_in_orbit",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "where_no_wally_has_gone_before",
+   "b": "mind_the_doors_please",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    14,
+    17
+   ],
+   "note": "turbolift: the lift car rises to row 3 under the opening; the bridge floor has a hatch gap to drop back onto the car"
+  },
+  {
+   "a": "mind_the_doors_please",
+   "b": "going_down_haberdashery",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    22,
+    24
+   ],
+   "note": "lower shaft: gap in the lift-room floor, landing at row 5 below; ledge stack to row 3 to climb back"
+  },
+  {
+   "a": "blinded_me_with_science",
+   "b": "reverse_parking_in_orbit",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    20,
+    23
+   ],
+   "note": "gangway stairs from the docking bay up to the lab"
+  },
+  {
+   "a": "warp_factor_tea",
+   "b": "hold_everything",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    8,
+    10
+   ],
+   "note": "maintenance hatch: gap in row 15; lands on a crate shelf at row 5"
+  },
+  {
+   "a": "one_small_step_for_wally",
+   "b": "crater_expectations",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "crater_expectations",
+   "b": "take_me_to_your_leader",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "day_of_the_trifles",
+   "b": "hot_springs_eternal",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    12
+   ],
+   "floor": 13
+  },
+  {
+   "a": "hot_springs_eternal",
+   "b": "dont_panic",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    12
+   ],
+   "floor": 13
+  },
+  {
+   "a": "blob_save_the_queen",
+   "b": "mind_the_gap_earthling",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    12,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "take_me_to_your_leader",
+   "b": "blob_save_the_queen",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    12,
+    16
+   ],
+   "note": "hole in the ground: gap in row 15; lands on honeycomb at row 5"
+  },
+  {
+   "a": "day_of_the_trifles",
+   "b": "mind_the_gap_earthling",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    18,
+    19
+   ],
+   "note": "tentacle-vine rope up to the jungle; gap beside it to drop back"
+  }
+ ],
+ "sealed": [
+  [
+   "bed_and_no_breakfast",
+   "rogues_gallery"
+  ],
+  [
+   "airing_dirty_linen",
+   "shelf_life"
+  ],
+  [
+   "master_bedroom",
+   "pot_black"
+  ],
+  [
+   "dressed_to_kill",
+   "haydn_seek"
+  ],
+  [
+   "the_bathroom",
+   "swotting_up"
+  ],
+  [
+   "tank_top",
+   "sun_lounge_lizard"
+  ],
+  [
+   "rogues_gallery",
+   "stuffed"
+  ],
+  [
+   "shelf_life",
+   "just_desserts"
+  ],
+  [
+   "pot_black",
+   "ballroom_blitz"
+  ],
+  [
+   "haydn_seek",
+   "drawing_a_blank"
+  ],
+  [
+   "sun_lounge_lizard",
+   "knock_knock"
+  ],
+  [
+   "mind_the_step",
+   "das_boot_room"
+  ],
+  [
+   "stuffed",
+   "dirty_laundry"
+  ],
+  [
+   "ballroom_blitz",
+   "too_many_cooks"
+  ],
+  [
+   "drawing_a_blank",
+   "silver_service"
+  ],
+  [
+   "people_in_glasshouses",
+   "boiling_point"
+  ],
+  [
+   "knock_knock",
+   "old_king_coal"
+  ],
+  [
+   "dirty_laundry",
+   "chateau_plonk"
+  ],
+  [
+   "bubble_and_squeak",
+   "skeleton_staff"
+  ],
+  [
+   "too_many_cooks",
+   "down_in_the_dumps"
+  ],
+  [
+   "upstairs_downstairs",
+   "cold_comfort_cellar"
+  ],
+  [
+   "silver_service",
+   "rat_race"
+  ],
+  [
+   "old_king_coal",
+   "flick_of_the_switch"
+  ],
+  [
+   "loft_conversion",
+   "bed_and_no_breakfast"
+  ],
+  [
+   "cistern_chapel",
+   "master_bedroom"
+  ],
+  [
+   "moths_to_a_flame",
+   "dressed_to_kill"
+  ],
+  [
+   "signal_failure",
+   "the_bathroom"
+  ],
+  [
+   "gutter_snipe",
+   "mind_your_head"
+  ],
+  [
+   "stack_em_high",
+   "cistern_chapel"
+  ],
+  [
+   "walking_on_thin_slate",
+   "raising_the_rafters"
+  ],
+  [
+   "which_way_the_wind_blows",
+   "moths_to_a_flame"
+  ],
+  [
+   "parapet_shop_boys",
+   "hatch_match_and_dispatch"
+  ],
+  [
+   "down_in_the_dumps",
+   "face_value"
+  ],
+  [
+   "cold_comfort_cellar",
+   "rat_race"
+  ],
+  [
+   "cold_comfort_cellar",
+   "glow_worm_disco"
+  ],
+  [
+   "rat_race",
+   "drip_feed"
+  ],
+  [
+   "glow_worm_disco",
+   "deep_pan_pit"
+  ],
+  [
+   "drip_feed",
+   "wind_up_merchant"
+  ],
+  [
+   "wipe_your_feet",
+   "allotment_of_trouble"
+  ],
+  [
+   "driveway_to_distraction",
+   "greenhouse_effect"
+  ],
+  [
+   "hedging_your_bets",
+   "trunk_call"
+  ],
+  [
+   "hedging_your_bets",
+   "driveway_to_distraction"
+  ],
+  [
+   "cliff_hanger",
+   "das_boot_room"
+  ],
+  [
+   "all_at_sea",
+   "the_pointy_end"
+  ],
+  [
+   "ready_room_steady_go",
+   "galactic_greasy_spoon"
+  ],
+  [
+   "are_we_there_yet",
+   "hot_bunking_in_hyperspace"
+  ],
+  [
+   "wally_phone_home",
+   "please_mind_your_molecules"
+  ],
+  [
+   "galactic_greasy_spoon",
+   "porridge_in_orbit"
+  ],
+  [
+   "hot_bunking_in_hyperspace",
+   "doctor_doctor_i_feel_spacey"
+  ],
+  [
+   "please_mind_your_molecules",
+   "droid_rage"
+  ],
+  [
+   "take_me_to_your_leader",
+   "day_of_the_trifles"
+  ]
+ ],
+ "links": [
+  {
+   "from": "dirty_laundry",
+   "to": "down_the_plughole",
+   "kind": "drain",
+   "note": "Step into the laundry-sink plughole: flushed one-way into the sewers, landing on the arrival walkway."
+  },
+  {
+   "from": "going_with_the_flow",
+   "to": "lifes_a_beach",
+   "kind": "outfall",
+   "note": "Walk into the outfall grille: flushed one-way out of the cliff pipe onto the sand."
+  },
+  {
+   "from": "the_pointy_end",
+   "to": "desert_island_discs",
+   "kind": "yacht",
+   "note": "Needs the trip switch (Flick of the Switch) thrown and all items in both yacht rooms; walk to the figurehead. One-way voyage across All at Sea."
+  },
+  {
+   "from": "desert_island_discs",
+   "to": "airlock_stock_and_barrel",
+   "kind": "teleport",
+   "note": "Hidden pad inside the straw hut; one-way to the starship aft airlock."
+  },
+  {
+   "from": "ground_control_to_major_wal",
+   "to": "reverse_parking_in_orbit",
+   "kind": "rocket",
+   "note": "Launches once the 3 silo items are taken; one-way to the starship docking bay (directly above the silo on the map)."
+  },
+  {
+   "from": "please_mind_your_molecules",
+   "to": "one_small_step_for_wally",
+   "kind": "teleport",
+   "note": "West pad: starship -> planet."
+  },
+  {
+   "from": "dont_panic",
+   "to": "please_mind_your_molecules",
+   "kind": "teleport",
+   "note": "Planet departure pad -> starship transporter room (closes the planet loop)."
+  },
+  {
+   "from": "please_mind_your_molecules",
+   "to": "the_bathroom",
+   "kind": "teleport",
+   "note": "East pad: home to The Bathroom - the only way back from space."
+  }
+ ],
+ "notes": "FLOW-FIRST DESIGN. The world is one grid read like a cross-section of a clifftop estate: space and the planet in the sky band (rows 0-2), towers/roof/attic (rows 5-8), the mansion as a 4-storey block (cols 8-15, rows 9-12), cellars (row 13), mines (rows 14-15) and the well plunging to row 18. The grounds hang off the east wall (cols 16-22), the coast off the west cliff (row 12, cols 1-7), the sewers sit apart bottom-left. Remote regions (sewers, starship, planet) touch nothing and are joined only by one-way links.\n\nLANDMARKS for navigating from memory: (1) the central column at col 12 - Landing on Your Feet / Neither Up Nor Down / The Great Hall / Upstairs, Downstairs are joined by one continuous staircase, so \"col 12\" is always the way up or down the house; (2) the Giant Tree column at col 18 (roots -> foot -> trunk -> fork -> canopy, five rooms tall) just east of the house; (3) Open All Hours at the far east end and Desert Island Discs at the far west end of the ground-level spine; (4) the rocket silo at the east end of the roof sits directly under the starship docking bay; (5) Flick of the Switch, the big red lever, at the east end of the cellars; (6) the transporter room hub in the starship.\n\nACT 1 - OPENING LOOP (difficulty 1-2, 17 items, 12 rooms): The Bathroom -> Dressed to Kill -> Landing on Your Feet -> Master Bedroom (meet Mrs Mop, see the goal) -> Airing Dirty Linen -> Bed & No Breakfast -> Nursery Crimes -> back stairs down -> Rogues' Gallery -> Shelf Life -> Pot Black -> Neither Up Nor Down -> grand staircase back up to the landing. It teaches, in order: walking and collecting (Bathroom), jumping a slow guardian, jumping up 1-2 cells onto shelves, one-way floors, ramps/stairs across a room edge, and a safe walk-off drop. Tank Top (east of the start) offers an early optional ladder into the attic that returns via the attic stairs - a second mini-loop.\n\nGATE 1 - THE GROUNDS (difficulty 2-4): the grand staircase continues down to The Great Hall; east through Knock Knock, Who's There? (front door, butler timing test) to the porch. The grounds are a wide playground: the drive, the Giant Tree (hollow-trunk shaft and rope, boughs, one-way climb to the canopy and a drop back via the rookery), the hedge maze with its climb into the west bough, the gatehouse, river, bridge and troll, and Open All Hours with the flat upstairs. A second door from Sun Lounge Lizard onto the terrace makes the grounds/first floor a loop.\n\nGATE 2 - BELOW STAIRS, CELLARS & MINES (difficulty 2-4): the servants' stairs under the Great Hall lead to Upstairs, Downstairs and the working rooms (kitchen, scullery with the dumb-waiter lift, laundry with the drain). Das Boot Room's cellar steps open the west cellars; Skeleton Staff's adit descends to the mines; the mines loop east and the echo cave climbs one-way up into the east cellars, which are cut off from the west by the ice wall. There waits Flick of the Switch (trip switch). Tunnel Vision's manhole climbs out into the Allotment, and the Allotment's coal chute leads back into the coal hole - a full circuit back to the hub. Boiling Point's grate is a one-way shortcut down to the switch for players who spot it. The well (rope down from Wind Up Merchant) is an optional deep dive with the comic fatal drop.\n\nGATE 3 - THE COAST (difficulty 2-4): the old back door is bricked up, so the coast is reached through the cellars - Brandy for the Parson's rock steps up to Cliff Hanger - or by the sewers (laundry plughole -> 7 sewer rooms -> outfall onto Life's a Beach). Beach, pier and the two yacht rooms are two-way. With the switch thrown and the yacht's items taken, the yacht sails one-way to Desert Island Discs; All at Sea is only reachable by wading out from the island.\n\nGATE 4 - SPACE (difficulty 3-5): the attic stairs in the linen cupboard -> attic -> the skylight climb in Loft Conversion onto the roof (one-way; the roof returns to the attic by the Flash Harry chimney drop). The roof has three towers: the belfry (bell rope), the clock tower (stairs) and the silo (stairs + shaft). Taking the 3 silo items launches the rocket into the starship; the island teleport is a second way in. The starship's transporter room sends Wally to the planet (a one-directional run: village -> drop into the hive -> vine rope up -> Don't Panic! pad back to the ship) and its home pad returns him to The Bathroom.\n\nENDING: at 150 of 175 items Mrs Mop leaves; touching the bed starts the forced run right through Landing on Your Feet and Dressed to Kill (kept jump-free) to the toilet, then Nightmare on Wally Street (off-grid).\n\nSOFT-LOCK SAFETY: every one-way step leads somewhere that walks back to the hub - drain -> sewers -> outfall -> beach -> cliff -> cellars; yacht -> island -> teleport -> ship -> home pad; rocket -> ship -> home pad; planet -> pad -> ship; the canopy climb returns by the rookery drop; the roof skylight climb returns by the chimney drop; the east-cellar climb returns by the manhole to the Allotment. Two-way links are stairs, shafts or ropes.\n\nPACING / ITEMS: 175 items, 150 needed, 0-3 per room. Mansion 40, roof & attic 18, towers 9, cellars 13, mines 12, well 4, grounds 28, coast 10, sewers 9, starship 22, planet 10. 47 items sit in difficulty 1-2 rooms (17 of them on the opening loop), 63 at difficulty 3, 65 at 4-5, so the first hour moves quickly; the 25 spare items let players skip the well bottom, All at Sea, the planet hive or similar hard pockets. The difficulty ramps with distance from The Bathroom in every direction."
+}

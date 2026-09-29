@@ -1,0 +1,10 @@
+# regenerated output (tools/render.js, tools/preview.js, tools/solve.js, tools/validate.js)
+out/preview/
+out/rooms/
+out/map.png
+out/gameover_*.png
+out/solve.json
+out/solve.txt
+out/validate.txt
+out/worldgen_C/
+node_modules/

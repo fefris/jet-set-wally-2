@@ -1,0 +1,7 @@
+- the_boot_room: done (1 item sock, 2 guardians: dog h, fish v; back stairs (5,0)-(17,12) onto boot bench r13, rack r11 -> shelf r9; bricked-up door + sign WAS: TO THE BEACH; SOLVE OK)
+- the_laundry: done (1 item sock, 3 guardians: crusher v (mangle rollers), drip v, hand v; mangle crossing via row-13 lines, overlapping line zig-zag 13/11/9/7, basket hop; SOLVE OK)
+- the_turkish_bath: done (1 item tap, 4 guardians: 3 bubbles v, rubber_duck v; solid pine tiers r11/9/7 + bench r13, pool kerb col 10 / tiled surround cols 21-29, drain portal x15 y14 -> round_the_u_bend, flashing sign; SOLVE OK)
+- the_kitchen: done (2 items carrot, lift + 3 guardians: chef h (worktop), rat h (floor), plate d (through the lift shaft); dumbwaiter lift cols 22-24 floor15<->pass shelf r4 cols 18-21 under the servery hatch (rows 0-1 open 18-21), range r12 with hot plates; SOLVE OK)
+- the_scullery: done (1 item cup, 2 guardians: plate d (draining board), drip v (pump); bucket r13 -> board r11 -> plate rack r9; cellar steps (21,15),(22,14) + stone stair-head, sign <- CELLARS; SOLVE OK)
+- servants_hall: done (1 item key, 2 guardians: maid h (table), butler h (floor); servants' stair (26,0)-(14,12) onto the refectory table r13, bell board + bell-pull key (7,8), signs WHO RANG? / KNEES-UP!; SOLVE OK)
+- the_boiler_room: done (1 item spanner, 2 guardians: fan v, clockwork_mouse h; pipes r13/11/9 -> steam main on the boiler r7 (valve nasty col 16) -> hot-water pipe r5 behind the boiler; ash-pit tunnel under the boiler; sign PRESSURE: HIGH; SOLVE OK)

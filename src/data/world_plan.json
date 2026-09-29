@@ -1,0 +1,3606 @@
+{
+ "title": "Jet Set Wally II - world plan (base: design C, judged; reworked)",
+ "designer": "C",
+ "grid": {
+  "cols": 23,
+  "rows": 18
+ },
+ "start": {
+  "room": "the_bathroom",
+  "col": 5,
+  "y": 104
+ },
+ "itemsTotal": 175,
+ "itemsRequired": 150,
+ "regions": [
+  {
+   "region": "mansion",
+   "rooms": 32,
+   "placement": "cols 6-13, rows 8-11 (top floor r8, first floor r9, ground floor r10, lower halls r11)",
+   "signature": "staircases and ramps; the dumbwaiter lift and the loft hatch are secret shortcuts",
+   "difficulty": "1-3 (1 around the Bathroom and Great Hall)"
+  },
+  {
+   "region": "roof",
+   "rooms": 14,
+   "placement": "attic r7 cols 6-13, roof r6 cols 7-12",
+   "signature": "pitched-roof ramps and wind/slate arrows; the west attic is only reachable over the roof (skylight)",
+   "difficulty": "2-4"
+  },
+  {
+   "region": "towers",
+   "rooms": 4,
+   "placement": "observatory (7,5), bell tower (10,5)-(10,4), rocket silo (12,5)",
+   "signature": "ropes (bell ropes, observatory rope); rocket launch",
+   "difficulty": "4-5"
+  },
+  {
+   "region": "cellars",
+   "rooms": 10,
+   "placement": "r12 cols 8-17, running east under the grounds",
+   "signature": "conveyors (bottling line) and crossbow arrows; the trip switch at the far east end",
+   "difficulty": "2-4"
+  },
+  {
+   "region": "mines",
+   "rooms": 8,
+   "placement": "r13 cols 11-15, r14 cols 12-14",
+   "signature": "lifts (pit cage, grotto lift) and crushers",
+   "difficulty": "3-5"
+  },
+  {
+   "region": "well",
+   "rooms": 3,
+   "placement": "a garden well under the riverbank: col 18, rows 11-13 (well head, shaft, bottom)",
+   "signature": "rope descent; overshooting the rope = comic fatal plunge with a guaranteed safe respawn at the well head",
+   "difficulty": "4-5"
+  },
+  {
+   "region": "grounds",
+   "rooms": 20,
+   "placement": "cols 14-21, rows 6-11; the conker tree is a 9-room cluster at cols 16-18 (crown r6-7, fork/branches r8, trunk r9-10, roots r11)",
+   "signature": "diagonal guardians (bees, birds, owls); the tree adds vines (ropes) and a spiral ramp",
+   "difficulty": "2-5 (drive 2, crow's-eye view 5)"
+  },
+  {
+   "region": "coast",
+   "rooms": 7,
+   "placement": "east of the grounds, rows 10-12, cols 20-25: river mouth -> beach -> pier -> yacht (stern, bow); headland lighthouse above the yacht behind the corner shop; island pocket (shallows + island) out to sea, reached only by the yacht",
+   "signature": "arrows (flying fish) and bobbing lifts; yacht voyage gated by the trip switch",
+   "difficulty": "2-4"
+  },
+  {
+   "region": "sewers",
+   "rooms": 7,
+   "placement": "bottom-left, rows 15-17 cols 0-4 (isolated; drain in, outfall out)",
+   "signature": "conveyor currents flowing west to the outfall; the side branch east fights the current",
+   "difficulty": "3-4"
+  },
+  {
+   "region": "starship",
+   "rooms": 20,
+   "placement": "top, rows 0-2 cols 8-15 (isolated; rocket / island pod in, home pad out)",
+   "signature": "turbo-lifts, flashing force fields, laser drones",
+   "difficulty": "3-5"
+  },
+  {
+   "region": "planet",
+   "rooms": 8,
+   "placement": "top-right, rows 0-1 cols 19-22 (isolated; teleport loop)",
+   "signature": "crater ramps and diagonal guardians; a one-way crater hole makes the loop",
+   "difficulty": "3-5"
+  },
+  {
+   "region": "ending",
+   "rooms": 1,
+   "placement": "off-grid",
+   "signature": "non-playable nightmare scene",
+   "difficulty": "-"
+  }
+ ],
+ "rooms": [
+  {
+   "id": "nursery",
+   "name": "Rock-a-Bye Nursery",
+   "region": "mansion",
+   "pos": [
+    6,
+    8
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Pastel wallpaper, rocking horses and a big toy chest. Floor 15 runs to the east door; in the west a staircase sinks through the floor (cols 2-5) to the back stairs. Building blocks step up every 2 rows (13, 11, 9, 7, 5) to the toy-chest lid at row 4 (cols 24-29), where the box-room trapdoor above drops Wally - the same blocks lead safely back down. Guardians: toy_soldier marching the floor, jack_in_box bouncing (v) beside the blocks; item on the ceiling mobile (row 6), reached from the top block."
+  },
+  {
+   "id": "aunt_mauds_boudoir",
+   "name": "Aunt Maud's Boudoir",
+   "region": "mansion",
+   "pos": [
+    7,
+    8
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Lace, perfume bottles and a dressing table. West door at floor 15; a staircase rising right along the east wall climbs to a row-7 landing and the high door (open 4-6) into the Master Bedroom. A ghost drifts diagonally across the stairs, a candle flickers (v) by the mirror; item on the dressing-table mirror (row 11)."
+  },
+  {
+   "id": "master_bedroom",
+   "name": "Master Bedroom",
+   "region": "mansion",
+   "pos": [
+    8,
+    8
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "The four-poster bed (right conveyor, row 14, cols 2-11) fills the west floor. Mrs Mop (special.housekeeper, static at cell x 12, y 104, standing on floor 15 just east of the bed) guards it. Enter at floor 15 from the east; a tallboy and a chest of drawers form one-way shelves (rows 13, 11, 9) in mid-room leading to a wardrobe-top shelf at row 7 that runs west to the high boudoir door, safely above Mrs Mop (too high to drop onto the bed); one item on the wardrobe top. No ramps or walls on the floor-15 run line from the bed to the east door; no guardian paths or nasties on it.",
+   "special": "housekeeper: Mrs Mop (special.housekeeper {x:12, y:104}) - touching her is fatal until 150 items are held, then she leaves. bed: true - standing on the bed conveyor afterwards starts the forced run right (4 px/frame, no jumping) along floor 15 through walk_in_wardrobe into the_bathroom."
+  },
+  {
+   "id": "walk_in_wardrobe",
+   "name": "Coats of Many Colours",
+   "region": "mansion",
+   "pos": [
+    9,
+    8
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "Rails of tweed jackets over a perfectly flat floor 15 (part of the ending run: no pits or nasties on the run line). One-way hat-box shelves (rows 13 and 11) lead to a hat-shelf item at row 9; a shaver buzzes (v) in the far corner between rows 2 and 8 only, never reaching the run line or the item.",
+   "special": "ending path: forced run right passes straight through on floor 15."
+  },
+  {
+   "id": "the_bathroom",
+   "name": "The Bathroom",
+   "region": "mansion",
+   "pos": [
+    10,
+    8
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "START ROOM and hub. Chequered lino at floor 15 with doors both sides; a claw-foot bath (one-way rim at row 13) and a basin shelf at row 11 give the first practice jumps; nothing solid stands on the floor-15 run line from the west door to the toilet. A rubber_duck paddles along the bath rim; item just above the basin shelf (row 9). The toilet stands on the east side (cols 22-24) as harmless decor.",
+   "special": "start: Wally at col 5, y=104, facing right. After winning, the forced run right ends at the toilet, which flushes Wally to the_nightmare (off-grid ending). Arrival point for the starship return teleport (col 5, floor 15)."
+  },
+  {
+   "id": "the_airing_cupboard",
+   "name": "Hot Water Bottle Heaven",
+   "region": "mansion",
+   "pos": [
+    11,
+    8
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "Warm slatted shelves stepping up like a ladder every 2 rows (14, 12, 10, 8, 6) to a top shelf at row 4 (cols 12-15) right under a loft hatch: the first climb the player meets and a secret two-way shortcut into the attic. Floor-15 doors both sides. A toilet_roll trundles along shelf 10; item on shelf 6."
+  },
+  {
+   "id": "top_of_the_stairs",
+   "name": "Stair Head Case",
+   "region": "mansion",
+   "pos": [
+    12,
+    8
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "The grand landing. Floor 15 from the west door; the main staircase descends through the floor at cols 8-11 to the Galleried Landing, and a folding loft ladder (ramp rising right) leaves through the ceiling at cols 24-27 into the attic. East door to the Spare Room at floor 15. A butler patrols the landing; item above the newel post (row 10)."
+  },
+  {
+   "id": "the_spare_room",
+   "name": "Spare Room? Spare Me!",
+   "region": "mansion",
+   "pos": [
+    13,
+    8
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "A guest room stuffed with junk nobody wants; dead end east of the landing (west door at floor 15, other walls solid). Leaning suitcases and a wobbly wardrobe make a five-step climb (rows 13, 11, 9, 7, 5) to the wardrobe top where the items hide; a ghost of a forgotten guest floats (v) and a clockwork_mouse runs the floor."
+  },
+  {
+   "id": "servants_back_stairs",
+   "name": "Back Stairs Gossip",
+   "region": "mansion",
+   "pos": [
+    6,
+    9
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "A narrow zig-zag stairwell: the flight from the Nursery arrives at cols 2-5 and runs down onto a half-landing at row 8, then a second flight descends through the floor at cols 20-23 to the Back Hall. East door at floor 15 to the gallery. A maid sweeps the half-landing, a rat scurries on the bottom floor; item on the half-landing."
+  },
+  {
+   "id": "the_rogues_gallery",
+   "name": "The Rogues' Gallery",
+   "region": "mansion",
+   "pos": [
+    7,
+    9
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "Long gallery of scowling ancestral portraits; picture rails stepped every 2 rows (13, 11, 9, 7) act as ledges. Floor-15 doors at both ends; a clock pendulum swings (v) mid-room and a ghost glides along the upper rail; items on top of two portrait frames."
+  },
+  {
+   "id": "shhh_the_library",
+   "name": "Shhh! Bookworms at Work",
+   "region": "mansion",
+   "pos": [
+    8,
+    9
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Towering bookcases with shelves every 2 rows and a rolling ladder. West door floor 15; the east door (open 7-10) leaves from the shelf at row 11 into the billiard-room gallery. flying_books flap diagonally between the stacks and a spider drops on its thread; items on the top shelves (rows 5 and 7)."
+  },
+  {
+   "id": "pot_black_billiard_room",
+   "name": "Pot Black Billiard Room",
+   "region": "mansion",
+   "pos": [
+    9,
+    9
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "A giant green baize table (top at row 11, continuing the gallery floor from the library door) under a hanging lamp; walk off it to the floor (4 rows) and climb back via the cue-rack stool (row 13); a dead end off the library (west door on the row-11 gallery, east wall solid). In the east corner the dumbwaiter hatch: a gap in the floor at cols 26-27 beside a one-way grating at cols 28-29 where the dumbwaiter delivers Wally from the Servery. Two snooker balls (beach_ball, h) roll the table; items above the pockets."
+  },
+  {
+   "id": "the_drawing_room",
+   "name": "Drawing a Blank",
+   "region": "mansion",
+   "pos": [
+    10,
+    9
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Easels, crayons and an unfinished portrait of Wally; a dead end reached only from the Music Room (east door floor 15, west wall solid). A disembodied hand sketches back and forth (h) and a candle bobs (v); easels of rising height (tops at rows 13, 11, 9, 7) lead to the item on the tallest one."
+  },
+  {
+   "id": "the_music_room",
+   "name": "Chopsticks Concerto",
+   "region": "mansion",
+   "pos": [
+    11,
+    9
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "A grand piano (stool at row 13, lid at row 11), a harp (row 9) and a chandelier hanging at row 7. A metronome pendulum ticks (v) and a bat flits diagonally under the chandelier; floor-15 doors both sides; items on the piano lid and the chandelier."
+  },
+  {
+   "id": "the_galleried_landing",
+   "name": "A Landing Strip",
+   "region": "mansion",
+   "pos": [
+    12,
+    9
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Balustraded landing: one straight grand staircase rising LEFT crosses the room - it arrives from the Great Hall below with ramp cells (23,15) and (22,14) and climbs up-left to (9,1) and (8,0) into Top of the Stairs. Floor-15 doors west (Music Room) and east (Trophy Room); the floor passes under the stairs. A knight clanks along the landing (h); item on the balustrade rail."
+  },
+  {
+   "id": "the_trophy_room",
+   "name": "The Stuffed Shirt Trophy Room",
+   "region": "mansion",
+   "pos": [
+    13,
+    9
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Stuffed stags' heads and a moth-eaten tiger rug; mounted antlers are nasty spikes along the upper wall. Floor-15 doors west (landing) and east through the French windows onto the Rose Terrace (a shortcut to the grounds). A cat stalks the floor and a stuffed parrot swoops diagonally; a gun cabinet and trunks step up every 2 rows to the items between the antlers (row 5)."
+  },
+  {
+   "id": "the_back_hall",
+   "name": "Back Hall Bedlam",
+   "region": "mansion",
+   "pos": [
+    6,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Coat pegs and umbrella stands. The back stairs come down at cols 20-23 onto floor 15; a second flight in the west corner descends through the floor at cols 4-7 to the Boot Room. East door floor 15 to the conservatory. A vacuum cleaner roars along the floor; item on a hat peg (row 9) above the boot bench (row 13) and hat shelf (row 11)."
+  },
+  {
+   "id": "the_conservatory",
+   "name": "Hothouse Flowers",
+   "region": "mansion",
+   "pos": [
+    7,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Glass roof, potted palms and hanging baskets as ledges every 2 rows (13, 11, 9, 7). A flytrap snaps (v) in the big pot and a butterfly drifts diagonally; floor-15 doors both sides; item in the top hanging basket."
+  },
+  {
+   "id": "the_dining_room",
+   "name": "Soup of the Day",
+   "region": "mansion",
+   "pos": [
+    8,
+    10
+   ],
+   "items": 2,
+   "difficulty": 2,
+   "theme": "A long banquet table (top at row 11, chairs at row 13) and a chandelier hanging at row 9 above it. Plates spin along the table (plate, h) and a champagne cork pops (v); floor-15 doors both sides; items on the table end and the chandelier."
+  },
+  {
+   "id": "the_servery",
+   "name": "Service With a Smirk",
+   "region": "mansion",
+   "pos": [
+    9,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Hot plates and serving hatches: the dumbwaiter lift (cols 23-25) rides between floor 15 and a serving shelf at row 4 (cols 26-29) under the billiard-room hatch; a hatch in the floor (gap cols 18-19, one-way grating cols 20-21) leads down to the Kitchen. Floor-15 doors west and east. A teapot waddles on the counter; item on the serving shelf."
+  },
+  {
+   "id": "gentlemens_smoking_room",
+   "name": "Pipe Dreams",
+   "region": "mansion",
+   "pos": [
+    10,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Leather armchairs (tops at row 13), a sideboard (row 11), a mantelpiece at row 9 and a fug of pipe smoke. Smoke rings (bubble) rise (v) and a butler with a cigar tray paces; floor-15 doors both sides; item on the mantelpiece."
+  },
+  {
+   "id": "the_cloakroom",
+   "name": "Cloak and Dagger Room",
+   "region": "mansion",
+   "pos": [
+    11,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Coats, galoshes and the servants' stair: a flight descends through the floor at cols 24-27 to the Servants' Hall. Floor-15 doors west and east. A roller_skate rolls the floor; item in the hat rack (row 9) above a bench (row 13) and a shelf (row 11)."
+  },
+  {
+   "id": "the_great_hall",
+   "name": "The Not-So-Great Hall",
+   "region": "mansion",
+   "pos": [
+    12,
+    10
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "Double-height entrance hall: the grand staircase sweeps in from above at cols 22-23. Wide doors west (floor 15) and east to the porch (open 10-14). A slow knight patrols; item on the mantel. Deliberately easy: the junction to the grounds. The grand staircase leaves through the ceiling rising LEFT with top ramp cells (23,1) and (22,0): from the floor it climbs right to a half-landing at the east wall, then turns back up-left (switchback)."
+  },
+  {
+   "id": "the_front_porch",
+   "name": "Mind the Doorstep",
+   "region": "mansion",
+   "pos": [
+    13,
+    10
+   ],
+   "items": 1,
+   "difficulty": 1,
+   "theme": "Pillared porch with a boot scraper and milk bottles; tall doorways west and east (open 10-14). A cat pads about; item on top of a milk-crate stack (steps at rows 13 and 11). Signpost: a painted board THE GROUNDS ->."
+  },
+  {
+   "id": "the_boot_room",
+   "name": "Boots and All",
+   "region": "mansion",
+   "pos": [
+    6,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Wellies, fishing rods and a bricked-up back door (the builders again - note the sign WAS: TO THE BEACH). The back stairs arrive from above; floor-15 door east (Laundry); the west edge is solid wall. A wet dog pads the floor (h); item on a shelf above the rods (row 9), reached from the boot bench (row 13) and the rod rack (row 11)."
+  },
+  {
+   "id": "the_laundry",
+   "name": "Mangle Tangle",
+   "region": "mansion",
+   "pos": [
+    7,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Steam, a mangle and washing lines strung every 2 rows (13, 11, 9, 7; one-way ledges). A drip falls from the sheets (v, fast) and the mangle rollers pound (crusher, v); floor-15 doors both sides; item pegged on the top washing line."
+  },
+  {
+   "id": "the_turkish_bath",
+   "name": "The Turkish Bath (Drained)",
+   "region": "mansion",
+   "pos": [
+    8,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Tiled steam room with tiered wooden benches (rows 13, 11, 9, 7) along the west wall and a drained plunge pool (cols 10-21) fenced by a low tiled kerb (wall, row 14) that must be hopped on purpose; the giant brass plughole grate sits in the pool floor at cols 15-16. East wall solid (kitchen behind); west door floor 15. Steam bubbles rise (v); item on the top bench.",
+   "special": "drain: stepping onto the plughole grate sucks Wally one-way into the sewers (round_the_u_bend). Signposted: a flashing NO RETURN - SEWERS notice and a whirlpool animation on the grate."
+  },
+  {
+   "id": "the_kitchen",
+   "name": "Too Many Cooks",
+   "region": "mansion",
+   "pos": [
+    9,
+    11
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Range cooker, copper pans and a meat-hook rail. The chef chops back and forth along the worktop (row 11, stool at row 13), a rat raids the floor; the dumbwaiter lift (cols 22-24) rises from floor 15 to a pass shelf at row 4 (cols 18-21) right under the Servery hatch - the secret shortcut to the first floor. West wall solid, floor-15 door east; items on the pass shelf and on top of the range (row 12)."
+  },
+  {
+   "id": "the_scullery",
+   "name": "Scrub-a-Dub Scullery",
+   "region": "mansion",
+   "pos": [
+    10,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Stone sinks, a pump and the cellar steps: a flight descends through the floor at cols 20-23 into the cellars. Floor-15 doors both sides. A plate skids along the draining board (h) and a drip falls from the pump; item on the plate rack. Signpost: chalked CELLARS arrow."
+  },
+  {
+   "id": "servants_hall",
+   "name": "Servants' Knees-Up",
+   "region": "mansion",
+   "pos": [
+    11,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Long refectory table (row 13) and a board of service bells. The servants' stair arrives from the Cloakroom at cols 24-27. Floor-15 doors both sides. A butler walks the floor and a maid walks the table top; item hanging from the bell board (row 9) above the table."
+  },
+  {
+   "id": "the_boiler_room",
+   "name": "Boiling Point",
+   "region": "mansion",
+   "pos": [
+    12,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A clanking boiler with pipe runs as ledges every 2 rows (13, 11, 9, 7, 5) and hissing valves (flashing nasties) on the pipes. A fan whirrs (v) and a clockwork_mouse runs the floor; floor-15 doors both sides; item behind the boiler on the top pipe."
+  },
+  {
+   "id": "the_coal_hole",
+   "name": "Coal Hole Rigmarole",
+   "region": "mansion",
+   "pos": [
+    13,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Coal heaps as ramps and the coal chute: a gap in the floor at cols 6-7 drops one-way into the Coal Cellar (stencilled COAL - DOWN ONLY). Floor-15 doors west (Boiler Room) and east (the sunken garden). A rat and a rolling coal lump (boulder, h); item atop the heap."
+  },
+  {
+   "id": "the_box_room",
+   "name": "Boxing Clever",
+   "region": "roof",
+   "pos": [
+    6,
+    7
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Tea chests stacked to the rafters at the far west of the attic. East door floor 15; a trapdoor at cols 26-27 drops one-way into the Nursery (chalked KIDS KEEP OUT - a quick way home). A spider on a thread (v) and a clockwork_mouse; tea chests stepped every 2 rows lead to the item on the top chest (row 5)."
+  },
+  {
+   "id": "mothball_alley",
+   "name": "Mothball Alley",
+   "region": "roof",
+   "pos": [
+    7,
+    7
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Dust-sheeted furniture and a rail of moth-eaten furs. The skylight above (cols 12-15) links to the Sooty Chimney Stacks: a sheeted wardrobe at row 4 (cols 12-15) catches droppers and is the jump-off ledge back up; dust-sheeted furniture steps (every 2 rows) link it to the floor. Floor-15 doors both sides; moths (butterfly) flutter diagonally; item on the wardrobe."
+  },
+  {
+   "id": "dads_model_railway",
+   "name": "Dad's Model Railway",
+   "region": "roof",
+   "pos": [
+    8,
+    7
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Trestle tables of model railway at rows 13 and 11 with a running track (right conveyor, row 11) and a signal-box roof at row 9 and tiny level crossings. A clockwork_mouse rides the track and a toy_soldier guards the station; floor-15 doors both sides; items in the tunnel mouths."
+  },
+  {
+   "id": "the_cold_water_tank",
+   "name": "Tank Top",
+   "region": "roof",
+   "pos": [
+    9,
+    7
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A huge galvanised tank (wall sides from row 7 down, water surface nasty) climbed by one-way rungs every 2 rows up its west side and crossed by hopping along its rim at row 6. West door floor 15; east wall solid (chimney breast). A drip falls from the ballcock (v) and a rubber_duck floats (h); item on the ballcock arm."
+  },
+  {
+   "id": "the_rafters",
+   "name": "Raising the Rafters",
+   "region": "roof",
+   "pos": [
+    10,
+    7
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Joists and loft insulation right above the Bathroom; dead end (west wall is the chimney breast, floor-15 door east). Sloping rafters (ramps) lead to beams at rows 5 and 9; a bat hangs and drops (v); item on the highest beam."
+  },
+  {
+   "id": "grannys_old_tat",
+   "name": "Granny's Old Tat",
+   "region": "roof",
+   "pos": [
+    11,
+    7
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Knitting baskets, a stuffed owl and a dressmaker's dummy. The loft hatch from the Airing Cupboard is in the floor: a gap at cols 12-13 to drop back down and a one-way board at cols 14-15 where climbers arrive. Floor-15 doors both sides; a yoyo bobs (v) and a cat chases wool (h); item on the dummy's hat."
+  },
+  {
+   "id": "top_of_the_loft_ladder",
+   "name": "Loft Conversion",
+   "region": "roof",
+   "pos": [
+    12,
+    7
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "The loft ladder arrives through the floor at cols 24-27; a second ladder (ramp rising left) climbs out of a roof hatch at cols 4-7 onto Weathercock Ridge. West door floor 15; the loft ladder tops out at row 11 and joists (rows 9 and 7) lead to the high east door (open 3-6) into the Pigeon Loft. A bat circles; item on the beam."
+  },
+  {
+   "id": "the_pigeon_loft",
+   "name": "The Pigeon Loft",
+   "region": "roof",
+   "pos": [
+    13,
+    7
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Racing-pigeon coops in tiers (one-way ledges at rows 9, 11, 13). Entered high from the west (floor 7); step down tier by tier to the floor 8 rows below the door and hop back up the same tiers (2-row rises) to leave. Pigeons (bird) swoop diagonally between coops; items in the top and bottom coops. Dead end."
+  },
+  {
+   "id": "sooty_chimney_stacks",
+   "name": "Sooty Chimney Stacks",
+   "region": "roof",
+   "pos": [
+    7,
+    6
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "West end of the roof: a cluster of chimney pots (walls) with sooty ramps between them. The skylight is in the floor (gap cols 12-13 drops to Mothball Alley, one-way glass at cols 14-15 where climbers arrive); the observatory rope hangs here from row 0 at cols 22-23 up into the Stargazer's Dome, with a one-way chimney-pot cap at row 5 (cols 24-27) catching anyone dropping back and shorter pots (rows 9, 13) stepping back down. East door (open 8-11) onto the slates. A pigeon swoops, a spider dangles; item atop the tallest pot."
+  },
+  {
+   "id": "slippery_slates",
+   "name": "Slippery Slates",
+   "region": "roof",
+   "pos": [
+    8,
+    6
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "A steep pitched roof: a ramp rises from the west door (floor 12) to the ridge at row 4, then falls to the gutter door at floor 15 on the east. Loose slates slide down as arrows (left, row 9) and a seagull swoops diagonally; items on the ridge tiles."
+  },
+  {
+   "id": "life_in_the_gutter",
+   "name": "Life in the Gutter",
+   "region": "roof",
+   "pos": [
+    9,
+    6
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A long lead gutter (floor 15) full of leaves and rain puddles (nasties) between two roof pitches. Floor-15 doors both sides; a snail crawls along and a pigeon flaps (v); item in the downpipe hopper (row 10)."
+  },
+  {
+   "id": "bell_tower_buttress",
+   "name": "Bell Tower Buttress",
+   "region": "roof",
+   "pos": [
+    10,
+    6
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Where the roof meets the stone bell tower. A bell rope hangs from row 0 to row 12 at cols 12-13: grab it to climb into the Bell Ringers' Loft; a buttress ledge at row 4 (cols 8-11) catches anyone dropping back, with corbels (rows 8, 12) stepping down. West door floor 15; a buttress ramp rises to the east door (open 5-8). A bat patrols; item on the buttress top."
+  },
+  {
+   "id": "aerial_alley",
+   "name": "Aerial Alley",
+   "region": "roof",
+   "pos": [
+    11,
+    6
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "A forest of 1980s TV aerials (thin wall stalks with nasty tips) on a flat roof at row 9; doors both at open 5-8. A crow (bird) swoops diagonally and a gust (arrow, right, row 6) sweeps across; items balanced on aerial crossbars (row 5), reached from lower crossbars (row 7)."
+  },
+  {
+   "id": "weathercock_ridge",
+   "name": "Weathercock Ridge",
+   "region": "roof",
+   "pos": [
+    12,
+    6
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "The east ridge with a giant weathercock. The loft ladder comes up through the floor at cols 4-7; the silo gantry stairs climb out of the ceiling at cols 20-23. West door open 5-8. Gusts (arrows, rows 6 and 10, opposite directions) and the spinning weathercock (bird, v); item on the weathercock."
+  },
+  {
+   "id": "stargazers_dome",
+   "name": "Stargazer's Dome",
+   "region": "towers",
+   "pos": [
+    7,
+    5
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "A brass telescope under a slatted dome; reached only by the rope from the chimney stacks (arrive on floor 15 at cols 22-23, a gap beside it at cols 24-25 drops back). The telescope tube is a ramp up to a row-5 eyepiece platform. An owl glides diagonally and a star twinkles (v); items on the eyepiece and a star-chart shelf. Dead end."
+  },
+  {
+   "id": "bell_ringers_loft",
+   "name": "The Bell Ringers' Loft",
+   "region": "towers",
+   "pos": [
+    10,
+    5
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Under the bells. Arrival from the roof below is by the roof room's rope (arrive on floor 15 at cols 12-13, drop back through the gap at cols 10-11). This room's ONE rope hangs at cols 18-19 and climbs on into the belfry above (a ledge at row 4, cols 20-23, catches drops from above and steps down by corbels at rows 7 and 10). Two pendulum guardians (v, 'pendulum') swing as the clappers; timing jumps between the corbels is the test. A bat flies (v); item between the corbels at row 7."
+  },
+  {
+   "id": "ding_dong_belfry",
+   "name": "Ding Dong Belfry",
+   "region": "towers",
+   "pos": [
+    10,
+    4
+   ],
+   "items": 3,
+   "difficulty": 5,
+   "theme": "Top of the tower: arrive by rope from the loft at cols 18-19 (floor 15 there, drop-back gap at cols 20-21), then climb stone corbels every 2 rows to a narrow beam at row 7 under two great swinging bells (pendulum, v); open arches, and slipping off the far end of the beam is a fatal fall. Bats swoop diagonally; three items on the bell headstock (row 4) and in the arches."
+  },
+  {
+   "id": "countdown_silo",
+   "name": "Countdown Silo",
+   "region": "towers",
+   "pos": [
+    12,
+    5
+   ],
+   "items": 3,
+   "difficulty": 4,
+   "theme": "A round silo with a stubby red rocket in the middle. Gantry stairs come up through the floor at cols 20-23; gantry ledges every 2 rows (13, 11, 9, 7, 5) ring the rocket with three items. A spring bounces (v) and a fan whirrs (v) on the gantries. Once all three items are taken the capsule door (cols 14-17, row 11) opens.",
+   "special": "rocket: when all items in this room are collected, the rocket flashes and the capsule opens; stepping into it launches Wally one-way to rocket_park (clock stops during the flight). Signposted by a flashing T-MINUS / ONE WAY panel; until Wally steps in he can still leave down the gantry stairs."
+  },
+  {
+   "id": "the_wine_cellar",
+   "name": "The Vintage Whine Cellar",
+   "region": "cellars",
+   "pos": [
+    8,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Racks of dusty bottles form tiered ledges every 2 rows (13, 11, 9, 7); dead end at the west of the cellar corridor (floor-15 east door). Champagne bottles pop (v) and a barrel rolls the floor; item on the top rack."
+  },
+  {
+   "id": "the_bottling_line",
+   "name": "Bottleneck",
+   "region": "cellars",
+   "pos": [
+    9,
+    12
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "The cellar signature room: a bottling machine of conveyor belts - the floor is a left conveyor for cols 6-25 and an upper belt at row 9 runs right, reached by crates at rows 13 and 11. Floor-15 doors both sides. A barrel rides the top belt and a champagne bottle bounces (v); items at the ends of the upper belt."
+  },
+  {
+   "id": "cellar_steps",
+   "name": "Steps in the Dark",
+   "region": "cellars",
+   "pos": [
+    10,
+    12
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "The scullery flight arrives through the ceiling at cols 20-23 onto floor 15. Floor-15 doors both sides. Easy junction: a rat scurries and a candle flickers (v); item on a candle bracket. Chalked arrows: WINE <-  -> CRYPT & SWITCH."
+  },
+  {
+   "id": "the_stilton_store",
+   "name": "Say Cheese!",
+   "region": "cellars",
+   "pos": [
+    11,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Wheels of ripening cheese on slatted shelves; a green stink cloud (flashing nasties) hangs at rows 6-7. The mine escape hatch comes up through a one-way floor at cols 22-23. Floor-15 doors both sides; a rat and a clockwork_mouse; item on the top cheese."
+  },
+  {
+   "id": "the_family_crypt",
+   "name": "Dead Relatives",
+   "region": "cellars",
+   "pos": [
+    12,
+    12
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Stone tombs of Wally's ancestors (tops at row 13) and a raised sarcophagus (row 11) and crossbow traps: arrows sweep right at row 9 and left at row 13. A skeleton rises from a tomb (v) and a ghost drifts; floor-15 doors both sides; item in a high niche (row 8) above the sarcophagus."
+  },
+  {
+   "id": "the_coal_cellar",
+   "name": "Cellar Dwellers",
+   "region": "cellars",
+   "pos": [
+    13,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The coal chute drops in at cols 6-7 onto a coal heap at row 4 (safe landing) that slopes down as ramps to floor 15. The pit-cage shaft is in the floor (gap cols 16-17, one-way grating cols 18-19 where the cage delivers climbers). Floor-15 doors both sides. A mole and a rolling boulder; item on the heap summit."
+  },
+  {
+   "id": "knuckle_bone_alley",
+   "name": "Knuckle Bone Alley",
+   "region": "cellars",
+   "pos": [
+    14,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "An ossuary passage with walls of stacked skulls; bone shelves every 2 rows (13, 11, 9, 7). A skeleton walks the floor and a skull bounces (v); floor-15 doors both sides; item in a skull niche (row 5)."
+  },
+  {
+   "id": "drip_drip_drip",
+   "name": "Drip, Drip, Drip",
+   "region": "cellars",
+   "pos": [
+    15,
+    12
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A leaking passage under the grounds: three drips fall (v, fast) onto puddle nasties along floor 15; stepping stones at row 13 avoid the puddles. Floor-15 doors both sides; item behind the heaviest drip."
+  },
+  {
+   "id": "fuse_box_of_doom",
+   "name": "Fuse Box of Doom",
+   "region": "cellars",
+   "pos": [
+    16,
+    12
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "The estate's electrical heart: a humming fuse box with the big TRIP SWITCH lever on a row-5 ledge, reached by jumping up junction-box ledges every 2 rows (13, 11, 9, 7) whose sparking caps are flashing nasties. West door floor 15; east door open 8-11. A fan whirrs (v) and a saw spins (h) along the row-11 conduit; item beside the lever.",
+   "special": "trip_switch: touching the lever (row 4, cols 20-21) throws it; it stays thrown after death. Effects (signposts): the lighthouse lamp starts flashing and the yacht raises its sail - the yacht can now sail to the island."
+  },
+  {
+   "id": "under_the_conker_roots",
+   "name": "Under the Conker Roots",
+   "region": "cellars",
+   "pos": [
+    17,
+    12
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "East end of the cellars: gnarled roots burst through the ceiling. West door open 8-11; root ledges every 2 rows climb to a root shelf at row 3 (cols 8-11) under a crack in the ceiling - a secret shaft up into the Tangled Roots of the conker tree (drop back the same way onto the shelf). Worms and a mole; items tangled in the roots."
+  },
+  {
+   "id": "canary_corner",
+   "name": "Canary Corner",
+   "region": "mines",
+   "pos": [
+    11,
+    13
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "A miners' refuge with a caged canary. Pit props stepped every 2 rows lead to a prop ledge at row 3 under a hatch at cols 22-23 is the one-way escape climb up into the Stilton Store (signposted WAY OUT). Floor-15 door east only. The canary (bird) flaps in its cage (v) and a ghost_miner walks; item on the cage."
+  },
+  {
+   "id": "seam_of_despair",
+   "name": "Seam of Despair",
+   "region": "mines",
+   "pos": [
+    12,
+    13
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "A coal-seam tunnel. In the west the grotto lift shaft opens in the floor (gap cols 4-5, one-way grating cols 6-7 where the grotto lift delivers climbers). Floor-15 doors both sides; a pickaxe swings (v) and a minecart rattles along rails at floor 15; items above the rails."
+  },
+  {
+   "id": "the_pit_cage",
+   "name": "The Pit Cage",
+   "region": "mines",
+   "pos": [
+    13,
+    13
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Mines signature: the miners' cage lift (lift, cols 12-14) shuttles between floor 15 and a headframe landing at row 4 (cols 16-19) that sits under the Coal Cellar shaft - droppers land on it, climbers jump up from it. Floor-15 doors both sides; a lantern bobs (v); item on the headframe."
+  },
+  {
+   "id": "dynamite_depot",
+   "name": "Dynamite Depot",
+   "region": "mines",
+   "pos": [
+    14,
+    13
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Crates of TNT stacked in 2-row steps up to the high east door; lit fuses are flashing nasties. A plank ramp descends through the floor at cols 26-29 to the Coal Face. West door floor 15; east door open 7-10 to Stalactite Street. Dynamite sticks hop (v) and a miner_bot trundles; items on the crates."
+  },
+  {
+   "id": "stalactite_street",
+   "name": "Stalactite Street",
+   "region": "mines",
+   "pos": [
+    15,
+    13
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "Dead-end cavern entered at floor 11 from the west: narrow ledges at row 11 over a glowing pool (nasty, row 15), stalactites falling (stalactite, v, fast) and a cave_bat swooping diagonally; items on the ledges between the drops."
+  },
+  {
+   "id": "glow_worm_grotto",
+   "name": "Glow-Worm Grotto",
+   "region": "mines",
+   "pos": [
+    12,
+    14
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Dark cavern lit by glowworms; a lift (cols 8-10) rides from floor 15 to a rock shelf at row 4 (cols 4-7) under the Seam of Despair shaft. Floor-15 door east; west is rock. Glowworms crawl along rock ledges (rows 13, 11, 9), a cave_spider drops; items on the glowing ledges."
+  },
+  {
+   "id": "echo_chamber",
+   "name": "Hello? Hello? Hello?",
+   "region": "mines",
+   "pos": [
+    13,
+    14
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A domed cave built as two mirrored halves; doors both at floor 15. Guardians come in mirrored pairs: two cave_bats crossing diagonally; stalagmite steps (rows 13, 11, 9) lead to the item on its tip (row 7)."
+  },
+  {
+   "id": "ee_by_gum_coal_face",
+   "name": "Ee By Gum Coal Face",
+   "region": "mines",
+   "pos": [
+    14,
+    14
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "The deepest working: the plank ramp from Dynamite Depot comes down through the ceiling (stairs rising right, ramp cells (27,15)/(28,14) continuing the flight). A crusher pounds (v) at the coal face and a miner_bot trundles (h); the old winze at the far end has caved in (solid rock). West door floor 15; item on a coal truck."
+  },
+  {
+   "id": "drop_me_a_line",
+   "name": "Drop Me a Line",
+   "region": "well",
+   "pos": [
+    18,
+    11
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "The well head beneath the reeds. Dropping in from the riverbank (gap cols 16-17) lands on a row-4 ledge (cols 16-21) that steps down by mossy stones (rows 7, 10) to the rim (floor 13-15). The winch rope (cols 14-15) hangs from row 0 to row 11 for the climb back up to the riverbank. The rim (floor 15, cols 8-21) surrounds the well mouth (gap cols 22-27): drop in beside the shaft rope top (cols 20-21), which climbs back from Well Beyond Help. Sealed west (tree roots) and east (river). A spider dangles (v) and a drip falls (v); item on the winch.",
+   "special": ""
+  },
+  {
+   "id": "well_beyond_help",
+   "name": "Well Beyond Help",
+   "region": "well",
+   "pos": [
+    18,
+    12
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "A sheer shaft. The shaft rope (cols 20-21) hangs from row 0 to row 12 and climbs back to the well head; a mossy ledge at row 4 (cols 22-25) catches careful droppers from the well mouth, and west-wall ledges (rows 7, 10, 13; never more than 3 rows apart) lead down and back up; the items sit on them. At the bottom, a floor-15 ledge (cols 4-9) is where the Deep Joy rope arrives; beside it a hole (cols 10-15) drops onto the Deep Joy shelf. Nothing but air below the east side of the row-4 ledge - leaping off it is the comic fatal plunge. Sealed west (cellars) and east."
+  },
+  {
+   "id": "deep_joy",
+   "name": "Deep Joy",
+   "region": "well",
+   "pos": [
+    18,
+    13
+   ],
+   "items": 3,
+   "difficulty": 5,
+   "theme": "The well bottom: black water (nasty, row 15) with a rock shelf at row 5 (cols 8-15) that catches a drop from the hole above; stepping stones every 3 rows (rows 8, 11, 14) lead down to a skeleton of a previous adventurer clutching an item. A rope (cols 8-9) climbs from the shelf back up to Well Beyond Help. A frog (h) and drips (v) guard the stones. Three items - the reward for braving the well."
+  },
+  {
+   "id": "the_gravel_drive",
+   "name": "Gravel Rash Drive",
+   "region": "grounds",
+   "pos": [
+    14,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "A crunchy gravel drive with a parked Rolls (bonnet at row 13, roof at row 11 as ledges). West door from the porch (open 10-14), east door floor 15 to the gatehouse. Terrace steps climb out of the ceiling at cols 24-27; a jumpable gap at cols 18-19 is the ha-ha edge - fall in and it is one-way down (sign: MIND THE HA-HA). A lawnmower and a gardener patrol; item on the car roof."
+  },
+  {
+   "id": "the_gatehouse",
+   "name": "Who Goes There?",
+   "region": "grounds",
+   "pos": [
+    15,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "A crenellated arch with the gatekeeper's hut. Floor-15 doors both sides; inside the hut a ladder of ledges every 2 rows climbs to a row-3 lookout under a murder hole (cols 4-7): a one-way climb to the battlements. A guard dog patrols; item above the keystone."
+  },
+  {
+   "id": "gatehouse_battlements",
+   "name": "Gatehouse Battlements",
+   "region": "grounds",
+   "pos": [
+    15,
+    9
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Along the top of the gatehouse wall: arrive from the murder hole at cols 4-7 (floor 15, one-way floor). A ramp of steps rises to the west door (open 8-11) onto the Rose Terrace. A pigeon swoops diagonally and a toy_soldier sentry marches; item on the flagpole pennant (row 10) above the parapet walk."
+  },
+  {
+   "id": "the_rose_terrace",
+   "name": "Roses Are Red",
+   "region": "grounds",
+   "pos": [
+    14,
+    9
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Formal rose garden on a raised terrace: thorny rose bushes are nasties, trellis arches (rows 13, 11, 9) are ledges. West door floor 15 from the Trophy Room French windows; east door open 8-11 to the battlements; stone steps descend through the floor at cols 24-27 to the drive. Bees buzz diagonally; item on a trellis."
+  },
+  {
+   "id": "ha_ha_the_sunken_garden",
+   "name": "Ha-Ha! The Sunken Garden",
+   "region": "grounds",
+   "pos": [
+    14,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "A sunken garden behind a hidden ditch wall: fall in from the drive at cols 18-19 onto a clipped hedge at row 4, then down steps to floor 15. West door floor 15 into the Coal Hole (the way out); the east side is the sheer ha-ha wall. Garden gnomes and a hedgehog; item in the fountain basin."
+  },
+  {
+   "id": "the_village_green",
+   "name": "Howzat! The Village Green",
+   "region": "grounds",
+   "pos": [
+    16,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Cricket pitch and a duck pond just outside the gates. Floor-15 doors both sides; the pond (nasty) mid-room is jumped or crossed via the scoreboard ledges; a cricket ball (beach_ball) rolls and a dog chases it; item on top of the scoreboard (ledges at rows 13, 11, 9; item at row 7)."
+  },
+  {
+   "id": "conker_tree_base_camp",
+   "name": "Conker Tree Base Camp",
+   "region": "grounds",
+   "pos": [
+    17,
+    10
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The foot of a colossal conker tree: huge buttress roots form ramps. Floor-15 doors west and east. A spiral ramp climbs into the hollow trunk through the ceiling at cols 14-17; a burrow between the roots (gap cols 20-21, one-way root cols 22-23) leads down into the Tangled Roots and back. A squirrel scampers, conkers (leaf) fall (v); item on a root knuckle."
+  },
+  {
+   "id": "heart_of_conker",
+   "name": "Heart of Conker",
+   "region": "grounds",
+   "pos": [
+    17,
+    9
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "A spiral of ramps winding up the inside of the trunk (arriving at cols 14-17); at the top a woodland vine (rope, cols 15-16) reaches row 0 into the Great Fork, and a knot shelf at row 4 (cols 17-20) catches drops from above. Solid bark walls both sides. Woodworm and an owl; items in knotholes."
+  },
+  {
+   "id": "the_great_fork",
+   "name": "The Great Fork",
+   "region": "grounds",
+   "pos": [
+    17,
+    8
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Where the trunk splits: the vine from the hollow arrives on floor 15 at cols 15-16 with a gap beside it (cols 17-18) to drop back. Branch doors west (open 9-12) and east (open 5-8). Knots stepped every 2 rows lead to a knot ledge at row 3 under a gap in the leaves (cols 12-13) is a one-way jump up into the canopy. Caterpillars and bees; item in the crotch."
+  },
+  {
+   "id": "squirrels_larder",
+   "name": "Squirrel's Larder",
+   "region": "grounds",
+   "pos": [
+    16,
+    8
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "The west branch tapering to twigs over a long fatal drop: step along thin twig ledges to the squirrel's conker stash at the tip. East door open 9-12 only (dead end). A squirrel runs the branch (h), a bird swoops diagonally; items at the branch tip."
+  },
+  {
+   "id": "owls_branch_office",
+   "name": "Owl's Branch Office",
+   "region": "grounds",
+   "pos": [
+    18,
+    8
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "The east branch with an owl's hollow fitted out like an office (filing cabinet!). West door open 5-8; the Rookery drops in through the leaves at cols 20-21 onto a twig platform at row 4 that steps down (row 8) to the branch floor (row 9). An owl glides diagonally and a caterpillar crawls; items in the in-tray and on the twig tip."
+  },
+  {
+   "id": "the_leafy_canopy",
+   "name": "The Leafy Canopy",
+   "region": "grounds",
+   "pos": [
+    17,
+    7
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "A dense ceiling of leaves with one-way leaf floors at many heights. Arrive from the fork at cols 12-13 (floor 15); east door floor 15 to the Rookery; a creeper (rope, cols 10-11) climbs to A Crow's-Eye View, with a leaf floor at row 4 (cols 6-9) catching drops from above; leaf floors step down (<= 4 rows) and back up (2 rows). Butterflies and bees cross diagonally; item among the leaves at row 4."
+  },
+  {
+   "id": "the_rookery",
+   "name": "The Rookery",
+   "region": "grounds",
+   "pos": [
+    18,
+    7
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Noisy rooks' nests on the eastern crown. West door floor 15; a gap in the floor at cols 20-21 drops one-way to the Owl's Branch Office - the way back down (sign: DOWN ->). Rooks (bird) swoop diagonally and a squirrel patrols; item in the highest nest."
+  },
+  {
+   "id": "crows_eye_view",
+   "name": "A Crow's-Eye View",
+   "region": "grounds",
+   "pos": [
+    17,
+    6
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "The very top, swaying in the wind: tiny twig perches over nothing. Arrive by the creeper at cols 10-11 on a floor-15 twig with a gap beside it (cols 8-9) to drop back. Wind gusts (arrows, rows 6 and 10) and a hawk (bird, fast diagonal); twig perches every 2 rows lead to two items at the very top (row 3) with a view of the mansion roof. Hardest room of the grounds."
+  },
+  {
+   "id": "tangled_roots",
+   "name": "Tangled Roots",
+   "region": "grounds",
+   "pos": [
+    17,
+    11
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "Under the tree: a maze of roots (walls and one-way root floors). The burrow from the base lands on a root at row 4 (cols 20-23, also the jump-off ledge back up); a crack in the floor (gap cols 8-9, one-way root cols 10-11) leads down into the cellars - the secret shaft. Moles and worms; items in root pockets."
+  },
+  {
+   "id": "the_riverbank",
+   "name": "Reedy Steady Go",
+   "region": "grounds",
+   "pos": [
+    18,
+    10
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Reeds and a weeping willow at the river's source. West door floor 15, grassy steps up to the east door (open 10-13, floor 14) onto the bridge approach. Among the reeds an old garden well: the well mouth is a gap in floor 15 at cols 16-17 (sign: DANGER - WELL) and the winch rope comes up from the well head at cols 14-15, where the floor-15 arrival spot is. A frog hops (h) and a heron (bird, d) stabs; item on the willow branch (row 9), reached from its roots (rows 13, 11)."
+  },
+  {
+   "id": "humpback_bridge",
+   "name": "Humpback Bridge",
+   "region": "grounds",
+   "pos": [
+    19,
+    10
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A stone humpback bridge: ramps rise from both stone abutments (floor 14, doors both at open 10-13) to a flat crown deck at row 9 with one missing plank (cols 12-13). Fall through it (4 rows) onto a towpath ledge under the arch (row 13), then step down to the towpath (floor 15, cols 14-15) where the bargee's rope from Under the Bridge arrives; beside it a gap (cols 16-17) drops onto the ledge below. Towpath ledges (rows 13, 11) lead back up through the plank gap. A penny_farthing rider crosses the deck and a seagull swoops; item on the crown."
+  },
+  {
+   "id": "under_the_bridge",
+   "name": "Troll Toll Towpath",
+   "region": "grounds",
+   "pos": [
+    19,
+    11
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Beneath the humpback arch: the river (nasty, rows 14-15) with bobbing stepping stones (lifts beside, never under, the drop). The bargee's rope hangs to row 0 at cols 14-15 (climb back up to the bridge); drop in beside it (the missing plank, cols 16-17) onto a ledge at row 4 (cols 16-19) that steps down (rows 7, 10) to the towpath. The towpath (floor 13, south bank) runs to the east door (open 10-12, floor 13): the river mouth and the beach. West edge sealed (the well). A fish leaps (v) and a trolley drifts (h); items under the arch."
+  },
+  {
+   "id": "the_far_bank",
+   "name": "Allotment of Trouble",
+   "region": "grounds",
+   "pos": [
+    20,
+    10
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Allotments and a scarecrow on the far side of the river. West door open 10-13, east door floor 15 to the shop. A hedgehog and a bobbing watering_can; item on the shed roof (row 9), reached via a water butt (row 13) and the shed eaves (row 11)."
+  },
+  {
+   "id": "open_all_hours",
+   "name": "Open All Hours (Mostly)",
+   "region": "grounds",
+   "pos": [
+    21,
+    10
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "The corner shop at the east end of the village: shelves of penny-sweet jars and a till that springs open. West door floor 15 from the far bank; back door east (floor 15) out onto the lighthouse headland. Promenade steps lead down through the floor to the pier below: the staircase rises LEFT, its bottom ramp cells are (9,15) and (8,14) and it continues up-left to a stockroom shelf. A runaway trolley (h) and a spring-loaded till drawer (spring, v); item in the sweet jar on the top shelf."
+  },
+  {
+   "id": "the_beach",
+   "name": "Sand in Your Sandwiches",
+   "region": "coast",
+   "pos": [
+    20,
+    11
+   ],
+   "items": 1,
+   "difficulty": 2,
+   "theme": "Where the river meets the sea: golden sand, a striped windbreak and a sandcastle. West door (open 10-12, floor 13) is the towpath from under the bridge, stepping down to the sand (floor 15); east door floor 15 onto the pier. The sewer outfall pipe pokes out of the cliff: outfall arrivals (special.arrival) land on a sand dune at row 5 (cols 6-11) that slopes down (ramp) to the sand - signposted BEACH. The cliff above is sealed. Crabs scuttle (h) and a beach_ball rolls (h); item on top of the sandcastle."
+  },
+  {
+   "id": "kiss_me_quick_pier",
+   "name": "Kiss-Me-Quick Pier",
+   "region": "coast",
+   "pos": [
+    21,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A seaside pier with a helter-skelter and a fortune-teller's booth. West door floor 15 from the beach; the east gangplank rises to the yacht door (open 10-13, floor 14). The promenade steps climb out through the ceiling to the corner shop above: a staircase rising LEFT whose top ramp cells are (9,1) and (8,0), coming up from the lower right. Seagulls swoop (d) and flying fish zip across (arrow, row 10); item on the helter-skelter top."
+  },
+  {
+   "id": "lighthouse_keepers_lunch",
+   "name": "Beacon and Eggs",
+   "region": "coast",
+   "pos": [
+    22,
+    10
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "The lighthouse on the headland, entered through the corner shop's back door (west, floor 15). Spiral stairs (switchback ramps) wind up to the lamp room at row 2; walls on the north, east and south. The lamp flashes once the trip switch is thrown - the sign that the yacht can sail. Seagulls swoop (d) through the windows and a crab guards the stairs; items in the lamp room and on the keeper's lunch tin. Dead end."
+  },
+  {
+   "id": "yacht_poop_deck",
+   "name": "Poop Deck Posers",
+   "region": "coast",
+   "pos": [
+    22,
+    11
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The stern of a millionaire's yacht moored at the pier: gangplank door west (open 10-13, floor 14), a sun deck (floor 14) with deckchairs (row 12), a cabin roof at row 10 and a flybridge at row 8. East door (open 10-13, floor 14) to the bow; the headland above is sealed. A sailor paces (h) and a lifebuoy bobs (v); item on the flagstaff (row 4)."
+  },
+  {
+   "id": "yacht_sharp_end",
+   "name": "The Sharp End",
+   "region": "coast",
+   "pos": [
+    23,
+    11
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "The bow: a raked foredeck ramp up to the bowsprit, the anchor windlass and the mast. West door (open 10-13, floor 14) from the poop deck; the east rail is sealed (open sea). A swinging anchor (v) and a parrot (d); ratline ledges climb the mast to a crow's nest at row 4; items on the bowsprit and in the crow's nest.",
+   "special": "yacht portal (kind yacht): once the trip switch flag 'trip' is set AND every item in yacht_poop_deck and yacht_sharp_end is collected, standing at the ship's wheel (floor 14, cols 6-7) sails the yacht one-way to desert_island_discs. Before that a furled sail and a flashing NOT YET pennant; after, the sail unfurls."
+  },
+  {
+   "id": "shark_infested_shallows",
+   "name": "Shark-Infested Shallows",
+   "region": "coast",
+   "pos": [
+    24,
+    12
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "A sandbar of stepping stones over the sea (waves nasty, row 15) just west of the island. East door floor 15 to the island; every other edge is sealed. A shark fin glides (h) and a jellyfish bobs (v); item on a rock. Dead end."
+  },
+  {
+   "id": "desert_island_discs",
+   "name": "Desert Island Discs",
+   "region": "coast",
+   "pos": [
+    25,
+    12
+   ],
+   "items": 2,
+   "difficulty": 3,
+   "theme": "A tiny palm island far out to sea. The yacht drops Wally on the sand (special.arrival: floor 15, cols 20-21). A palm tree with notch ledges climbs to a frond at row 4 with an item; a wind-up gramophone plays; west door floor 15 to the shallows. A crab and a parrot. In a clearing a crashed escape pod glows.",
+   "special": "teleport: the escape-pod pad (floor 15, cols 4-7) beams Wally one-way to molecule_shuffler on the starship - signposted by a flashing ONE-WAY TICKET beacon. This is the only exit from the island."
+  },
+  {
+   "id": "round_the_u_bend",
+   "name": "Round the U-Bend",
+   "region": "sewers",
+   "pos": [
+    3,
+    15
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Arrival from the Turkish Bath plughole: Wally splashes down onto a pipe ledge at row 4 in a giant U-shaped pipe; ramps down both arms to the bottom of the U, where a gap at cols 14-15 drops one-way into the Spanish Drain. Walls all round. A rubber_duck floats along the U; item at the bottom. Sign: THIS WAY OUT (EVENTUALLY)."
+  },
+  {
+   "id": "the_spanish_drain",
+   "name": "The Spanish Drain",
+   "region": "sewers",
+   "pos": [
+    3,
+    16
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The main sewer: currents (left conveyors) along walkways at rows 5, 9 and 13 above floor 15. Arrive from the U-Bend at cols 14-15 onto the row-5 walkway. Doors west (with the flow) and east (against the flow) at floor 15. Rats and a slime; item above the current."
+  },
+  {
+   "id": "flotsam_junction",
+   "name": "Flotsam Junction",
+   "region": "sewers",
+   "pos": [
+    4,
+    16
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "A junction choked with floating junk; the current (left conveyors) fights anyone heading east, making it a jumping puzzle. West door floor 15; a slimy ramp descends through the floor at cols 20-23 to the Rat King. A shopping trolley and a rubber_duck ride the current; items on junk ledges."
+  },
+  {
+   "id": "the_rat_kings_throne",
+   "name": "The Rat King's Throne",
+   "region": "sewers",
+   "pos": [
+    4,
+    17
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "A cavern throne room built of junk: the Rat King (rat, bright) paces before his bottle-top throne and courtier rats run a lower ledge. The ramp from Flotsam Junction arrives at cols 20-23. Dead end: items on the throne canopy (row 5), climbed via bottle-top steps every 2 rows."
+  },
+  {
+   "id": "fatberg_alley",
+   "name": "Gravy Train Tunnel",
+   "region": "sewers",
+   "pos": [
+    2,
+    16
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "A tunnel half-blocked by a monstrous fatberg (wall mass) climbed via greasy conveyor ledges. Doors both floor 15. Blobs ooze (h); item on top of the fatberg."
+  },
+  {
+   "id": "the_gunge_tank",
+   "name": "The Gunge Tank",
+   "region": "sewers",
+   "pos": [
+    1,
+    16
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "A settling tank of bright green gunge (nasty) crossed on a gantry at row 11 (ladder rungs at row 13) and a hanging chain (rope guardian). Doors both at floor 15 on the tank rims. Bubbles rise (v) and a slime slides; item on the gantry."
+  },
+  {
+   "id": "the_outfall",
+   "name": "The Outfall",
+   "region": "sewers",
+   "pos": [
+    0,
+    16
+   ],
+   "items": 0,
+   "difficulty": 3,
+   "theme": "The end of the line: the sewer spills into a grating. East door floor 15; the outfall grate (cols 4-6, floor 15) whooshes Wally one-way out of the cliff pipe onto the Beach - signposted BEACH -> with a flashing arrow. A crab and drips; no items (a breather room).",
+   "special": "outfall: stepping onto the grate transports Wally one-way to the_beach (lands on the dune at row 5)."
+  },
+  {
+   "id": "captains_log_cabin",
+   "name": "Captain's Log Cabin",
+   "region": "starship",
+   "pos": [
+    9,
+    0
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "A timber log cabin inside a starship (the captain is homesick): rocking chair, fire and a moose head at row 7 over a log pile (rows 13, 11, 9). Dead end (east door floor 15). An astronaut dozes (v) and an alien_walker tidies; item on the moose head."
+  },
+  {
+   "id": "where_no_wally",
+   "name": "Where No Wally Has Gone Before",
+   "region": "starship",
+   "pos": [
+    10,
+    0
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The star-chart room: a huge live map of every visited room covers the back wall. Doors both at floor 15; chart tables at rows 13, 11 and 9. Stars drift diagonally across the map; item on the chart table.",
+   "special": "cartography: the wall screen draws a live map of visited rooms (green = cleared, red = items left)."
+  },
+  {
+   "id": "turbo_lift_a",
+   "name": "Grav Tube: Going Up",
+   "region": "starship",
+   "pos": [
+    11,
+    0
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Top of the turbo-lift column: the shaft opens in the floor (gap cols 14-15, one-way grating cols 16-17 where the Deck B lift delivers climbers). Doors west and east at floor 15. A laser_drone sweeps diagonally; item above the shaft."
+  },
+  {
+   "id": "the_captains_chair",
+   "name": "The Captain's Chair",
+   "region": "starship",
+   "pos": [
+    12,
+    0
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "The bridge: a big viewscreen (a comet streaks past), the captain's swivel chair on a raised dais (step at row 13, dais at row 11), consoles as ledges (row 9). Doors both at floor 15. An alien_head glares from the viewscreen (v) and an astronaut helmsman paces; item on the chair."
+  },
+  {
+   "id": "red_shirt_lockers",
+   "name": "Red Shirt Locker Room",
+   "region": "starship",
+   "pos": [
+    13,
+    0
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Lockers of doomed crewmen's red shirts; locker tops are ledges and several are booby-trapped (flashing nasties). Doors both at floor 15. A laser_drone and a robot; item in a locker at row 5."
+  },
+  {
+   "id": "no_place_like_home",
+   "name": "There's No Place Like Home",
+   "region": "starship",
+   "pos": [
+    14,
+    0
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The return pad room: a glowing pad on floor 15 (cols 18-21) and a pair of ruby slippers on a plinth. West door floor 15. Guardians keep well away from the pad (a satellite bobs, v, in the far corner); item on the plinth (row 9).",
+   "special": "teleport: standing on the pad beams Wally one-way home to the_bathroom (arrives on floor 15 at col 5). Signposted HOME: THE BATHROOM in flashing letters. This is the way back from space."
+  },
+  {
+   "id": "the_brig",
+   "name": "The Brig",
+   "region": "starship",
+   "pos": [
+    8,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Force-field cells (flashing nasties switching every 2 s) along the west end of the deck; dead end, east door floor 15. An alien prisoner (alien_head) bobs behind bars and a robot guard patrols; item inside the far cell - time the force fields."
+  },
+  {
+   "id": "say_aaah_sickbay",
+   "name": "Say Aaah!",
+   "region": "starship",
+   "pos": [
+    9,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Biobeds as platforms (rows 13, 11), a shelf at row 9 and a medicine cabinet on top at row 7 and a skeleton on a stand (v). A laser_drone (hypospray) sweeps diagonally. Doors both at floor 15; item on the medicine cabinet."
+  },
+  {
+   "id": "for_mash_get_smash",
+   "name": "For Mash Get Smash",
+   "region": "starship",
+   "pos": [
+    10,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The crew mess: a food-hatch conveyor (right, row 11, reached from the table at row 13) serves instant mash; robots chuckle at the table. Doors both at floor 15. A robot waiter (h) and a blob of mash (v); item on the mash dispenser."
+  },
+  {
+   "id": "turbo_lift_b",
+   "name": "Grav Tube: Stopping",
+   "region": "starship",
+   "pos": [
+    11,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Middle of the turbo-lift column: a lift (cols 10-12) runs from floor 15 to a platform at row 4 (cols 14-17) under the Deck A shaft; the Deck C shaft opens in the floor (gap cols 20-21, one-way grating cols 22-23). Doors west and east at floor 15. A laser_drone; item on the row-4 platform."
+  },
+  {
+   "id": "hydroponic_spud_farm",
+   "name": "Hydroponic Spud Farm",
+   "region": "starship",
+   "pos": [
+    12,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Rows of space potatoes in hydroponic trays (ledges every 2 rows: 13, 11, 9, 7) with sprinkler drips. Doors both at floor 15. space_slugs crawl the trays and a blob bobs; item on the top tray."
+  },
+  {
+   "id": "robo_kennels",
+   "name": "Robo-Kennels",
+   "region": "starship",
+   "pos": [
+    13,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Kennels for the ship's robot dogs (robo_dog, h, fast). The engine-room hatch opens in the floor at cols 6-7 (arrive on a one-way floor-15 grating there). Doors west and east at floor 15. Item on the kennel roof."
+  },
+  {
+   "id": "molecule_shuffler",
+   "name": "The Molecule Shuffler",
+   "region": "starship",
+   "pos": [
+    14,
+    1
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "The transporter room: an ARRIVALS pad (floor 15, cols 4-7) where island and planet beams land (special.arrival), a HOME pad (floor 15, cols 12-15) that beams one-way to the Bathroom, and a DEPARTURES dais (row 9, cols 20-23, up console steps at rows 13 and 11) that beams one-way to the alien planet. Doors west and east at floor 15. A robot operator paces the console (h, away from the pads) and a satellite bobs (v); items on the console (row 10) and the dais.",
+   "special": "arrival pad for island and planet teleports; portals: HOME pad -> the_bathroom (teleport, signposted HOME in flashing letters), departures dais -> welcome_to_zarg (teleport, signposted PLANET ZARG: ONE WAY). No guardian path over any pad."
+  },
+  {
+   "id": "space_laundrette",
+   "name": "Space Laundrette",
+   "region": "starship",
+   "pos": [
+    15,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Space washing machines spin (fan, v) and lost socks float (bubble, diagonal); dead end at the east of the mid deck, west door floor 15. Item in the lost-sock basket."
+  },
+  {
+   "id": "torpedo_bay",
+   "name": "Torpedo Bay (Loaded)",
+   "region": "starship",
+   "pos": [
+    9,
+    2
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Torpedo tubes along the walls; torpedoes streak across as arrows (rows 8 and 12, alternating directions). Dead end west of the hold (east door floor 15). A laser_drone sweeps; items in the tubes."
+  },
+  {
+   "id": "hold_everything",
+   "name": "Hold Everything!",
+   "region": "starship",
+   "pos": [
+    10,
+    2
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The cargo hold: crates stacked in 2-row steps as platforms and a loader conveyor (right, row 11). Doors both at floor 15. A robot forklift (h) and a ufo drone (v); item on the tallest crate stack."
+  },
+  {
+   "id": "turbo_lift_c",
+   "name": "Grav Tube: Going Down",
+   "region": "starship",
+   "pos": [
+    11,
+    2
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Starship signature: the turbo-lift - a lift (cols 16-18) rises from floor 15 to a platform at row 4 (cols 20-23) under the Deck B shaft; jump up from it into Deck B, or drop down onto it. Doors west (hold) and east (Rocket Park) at floor 15. A laser_drone sweeps diagonally; item on the platform."
+  },
+  {
+   "id": "rocket_park",
+   "name": "Rocket Park (Pay and Display)",
+   "region": "starship",
+   "pos": [
+    12,
+    2
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "Arrival from the rocket: the rocket parks on a pad mid-floor (floor 15, cols 12-19; no guardian path over it). Doors west (turbo-lift) and east (engine room) at floor 15. A robot and an astronaut patrol the gantries; item on the gantry (row 7; gantry steps every 2 rows)."
+  },
+  {
+   "id": "she_cannae_take_it",
+   "name": "She Cannae Take It, Captain!",
+   "region": "starship",
+   "pos": [
+    13,
+    2
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "The engine room: pistons (crusher, v) pound between catwalks every 2 rows (13, 11, 9, 7, 5); a maintenance hatch in the ceiling at cols 6-7 (ledge at row 3) is a one-way climb up to the Robo-Kennels. Doors west and east at floor 15; items on the catwalks."
+  },
+  {
+   "id": "the_warp_core",
+   "name": "The Warp Core (Do Not Lick)",
+   "region": "starship",
+   "pos": [
+    14,
+    2
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "A pulsing warp-core column (flashing nasty cells switching on and off) wrapped by a narrow catwalk spiral. West door floor 15; dead end. Beams sweep (v) and a comet whizzes diagonally; two items at the top of the core (row 3)."
+  },
+  {
+   "id": "welcome_to_zarg",
+   "name": "Welcome to Planet Zarg",
+   "region": "planet",
+   "pos": [
+    19,
+    0
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "Arrival pad on a purple crag (floor 15, cols 4-7, guardian-free). Crater slopes (ramps) roll east to the door (floor 15); the west is a cliff. An alien_walker waves (h) and a ufo hovers (v); item on a crag. Sign: FOLLOW THE CRATERS."
+  },
+  {
+   "id": "crater_expectations",
+   "name": "Crater Expectations",
+   "region": "planet",
+   "pos": [
+    20,
+    0
+   ],
+   "items": 2,
+   "difficulty": 4,
+   "theme": "Bowl-shaped craters built from ramps; west door floor 15, east door open 9-12 on a crater rim. Diagonal guardians (comet, blob) criss-cross the bowls; items on the crater rims (row 6)."
+  },
+  {
+   "id": "the_gloop_lagoon",
+   "name": "The Gloop Lagoon",
+   "region": "planet",
+   "pos": [
+    21,
+    0
+   ],
+   "items": 1,
+   "difficulty": 5,
+   "theme": "A lagoon of bubbling gloop (nasty) crossed on floating rocks (lifts). West door open 9-12, east door open 7-10 up the hillside. A tentacle rises (v) from the gloop and bubbles pop; the geyser vent from Spaghetti Junction pushes up through a one-way floor at cols 16-17; item on a lone rock."
+  },
+  {
+   "id": "ulla_ulla_tripod_hill",
+   "name": "Ulla! Ulla! Tripod Hill",
+   "region": "planet",
+   "pos": [
+    22,
+    0
+   ],
+   "items": 2,
+   "difficulty": 5,
+   "theme": "A hill patrolled by a Martian tripod (tripod, diagonal) sweeping a heat ray (beam, v). West door open 7-10; the east is a cliff. On the far side a crater hole (gap at cols 24-26) drops one-way into the canyon below (sign: DOWN ONLY). Items on the hilltop."
+  },
+  {
+   "id": "heres_looking_at_you",
+   "name": "Here's Looking at You",
+   "region": "planet",
+   "pos": [
+    22,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "A canyon of giant eyeballs (eyeball, v) that follow Wally; the hole from Tripod Hill drops in at cols 24-26 onto a ledge at row 4 that steps down (rows 8, 12) to the canyon floor. West door floor 15; east is canyon wall. Item on an eyelid ledge."
+  },
+  {
+   "id": "spaghetti_junction",
+   "name": "Spaghetti Junction",
+   "region": "planet",
+   "pos": [
+    21,
+    1
+   ],
+   "items": 1,
+   "difficulty": 5,
+   "theme": "Alien tentacles (tentacle) twist diagonally across a knot of ledges; vent ledges every 2 rows lead to a steam-vent ledge at row 3 under a gap (cols 16-17) is a one-way hop back up to the Gloop Lagoon. Doors both at floor 15. Item in the tangle."
+  },
+  {
+   "id": "moon_buggy_motorway",
+   "name": "Moon Buggy Motorway",
+   "region": "planet",
+   "pos": [
+    20,
+    1
+   ],
+   "items": 1,
+   "difficulty": 4,
+   "theme": "A cratered highway: moon_buggies race along the flat road (floor 15, h, speed 2) under an overpass (row 11, ramps up at both ends); a ringed_planet drifts in the sky. Doors both at floor 15; item on the overpass."
+  },
+  {
+   "id": "duty_free_departures",
+   "name": "Duty-Free Departures",
+   "region": "planet",
+   "pos": [
+    19,
+    1
+   ],
+   "items": 1,
+   "difficulty": 3,
+   "theme": "The alien spaceport: a departures pad (floor 15, cols 4-7) and a duty-free counter (row 13) and shelves (row 11). East door floor 15; west wall solid. alien_walker porters (h) and a star (diagonal); item on the counter.",
+   "special": "teleport: the pad beams Wally one-way back to molecule_shuffler (arrivals pad) - signposted DEPARTURES: STARSHIP."
+  },
+  {
+   "id": "the_nightmare",
+   "name": "Back to Square One!",
+   "region": "ending",
+   "offgrid": true,
+   "unreachableOk": true,
+   "items": 0,
+   "difficulty": 1,
+   "theme": "The ending: Wally wakes up at the bottom of a mine he has never seen, every guardian he ever dodged patrolling above him, and jumps on the spot in despair while the results roll. Not playable (special.nightmare {x, y}).",
+   "special": "ending: entered only via the_bathroom toilet after winning; Wally jumps on the spot, then the results screen (time, rooms, items)."
+  }
+ ],
+ "doors": [
+  {
+   "a": "nursery",
+   "b": "aunt_mauds_boudoir",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "aunt_mauds_boudoir",
+   "b": "master_bedroom",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    4,
+    6
+   ],
+   "floor": 7,
+   "note": "high door: row-7 landing in the boudoir, wardrobe-top shelf in the bedroom"
+  },
+  {
+   "a": "master_bedroom",
+   "b": "walk_in_wardrobe",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15,
+   "note": "ending run line (floor 15, flat)"
+  },
+  {
+   "a": "walk_in_wardrobe",
+   "b": "the_bathroom",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15,
+   "note": "ending run line (floor 15, flat)"
+  },
+  {
+   "a": "the_bathroom",
+   "b": "the_airing_cupboard",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_airing_cupboard",
+   "b": "top_of_the_stairs",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "top_of_the_stairs",
+   "b": "the_spare_room",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "servants_back_stairs",
+   "b": "the_rogues_gallery",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_rogues_gallery",
+   "b": "shhh_the_library",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "shhh_the_library",
+   "b": "pot_black_billiard_room",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    7,
+    10
+   ],
+   "floor": 11,
+   "note": "bookshelf at row 11 leads onto the billiard-room gallery"
+  },
+  {
+   "a": "the_drawing_room",
+   "b": "the_music_room",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_music_room",
+   "b": "the_galleried_landing",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_galleried_landing",
+   "b": "the_trophy_room",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_trophy_room",
+   "b": "the_rose_terrace",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15,
+   "note": "French windows onto the terrace"
+  },
+  {
+   "a": "the_back_hall",
+   "b": "the_conservatory",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_conservatory",
+   "b": "the_dining_room",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_dining_room",
+   "b": "the_servery",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_servery",
+   "b": "gentlemens_smoking_room",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "gentlemens_smoking_room",
+   "b": "the_cloakroom",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_cloakroom",
+   "b": "the_great_hall",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_great_hall",
+   "b": "the_front_porch",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_front_porch",
+   "b": "the_gravel_drive",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    14
+   ],
+   "floor": 15,
+   "note": "front door"
+  },
+  {
+   "a": "the_boot_room",
+   "b": "the_laundry",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_laundry",
+   "b": "the_turkish_bath",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_kitchen",
+   "b": "the_scullery",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_scullery",
+   "b": "servants_hall",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "servants_hall",
+   "b": "the_boiler_room",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_boiler_room",
+   "b": "the_coal_hole",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_coal_hole",
+   "b": "ha_ha_the_sunken_garden",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "nursery",
+   "b": "servants_back_stairs",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    3,
+    4
+   ],
+   "note": "back stairs, top flight",
+   "rise": "left"
+  },
+  {
+   "a": "servants_back_stairs",
+   "b": "the_back_hall",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    21,
+    22
+   ],
+   "note": "back stairs, middle flight",
+   "rise": "right"
+  },
+  {
+   "a": "the_back_hall",
+   "b": "the_boot_room",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    5,
+    6
+   ],
+   "note": "back stairs, bottom flight",
+   "rise": "left"
+  },
+  {
+   "a": "top_of_the_stairs",
+   "b": "the_galleried_landing",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    8,
+    9
+   ],
+   "note": "grand staircase, upper flight",
+   "rise": "left"
+  },
+  {
+   "a": "the_galleried_landing",
+   "b": "the_great_hall",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    22,
+    23
+   ],
+   "note": "grand staircase, lower flight",
+   "rise": "left"
+  },
+  {
+   "a": "the_cloakroom",
+   "b": "servants_hall",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    25,
+    26
+   ],
+   "note": "servants' stair",
+   "rise": "right"
+  },
+  {
+   "a": "pot_black_billiard_room",
+   "b": "the_servery",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    26,
+    29
+   ],
+   "note": "dumbwaiter, upper (secret): upper room row 15 = gap at cols 26-27 (drop) + one-way floor at cols 28-29 (arrival); lower room rows 0-1 open over cols 26-29 with the serving shelf at row 4 (cols 26-29), reached by the servery lift at cols 23-25"
+  },
+  {
+   "a": "the_servery",
+   "b": "the_kitchen",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    18,
+    21
+   ],
+   "note": "dumbwaiter, lower (secret): upper room row 15 = gap at cols 18-19 (drop) + one-way floor at cols 20-21 (arrival); lower room rows 0-1 open over cols 18-21 with the pass shelf at row 4 (cols 18-21), reached by the kitchen lift at cols 22-24"
+  },
+  {
+   "a": "the_coal_hole",
+   "b": "the_coal_cellar",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    6,
+    7
+   ],
+   "note": "coal chute, one-way down; lands on the coal heap at row 4"
+  },
+  {
+   "a": "the_scullery",
+   "b": "cellar_steps",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    21,
+    22
+   ],
+   "note": "cellar steps",
+   "rise": "right"
+  },
+  {
+   "a": "grannys_old_tat",
+   "b": "the_airing_cupboard",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    12,
+    15
+   ],
+   "note": "loft hatch (secret): upper room row 15 = gap at cols 12-13 (drop) + one-way floor at cols 14-15 (arrival); lower room rows 0-1 open over cols 12-15 with the top airing shelf at row 4 (cols 12-15)"
+  },
+  {
+   "a": "top_of_the_loft_ladder",
+   "b": "top_of_the_stairs",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    25,
+    26
+   ],
+   "note": "folding loft ladder",
+   "rise": "right"
+  },
+  {
+   "a": "the_box_room",
+   "b": "nursery",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    26,
+    27
+   ],
+   "note": "trapdoor, one-way down onto the toy-chest lid (row 4)"
+  },
+  {
+   "a": "the_box_room",
+   "b": "mothball_alley",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "mothball_alley",
+   "b": "dads_model_railway",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "dads_model_railway",
+   "b": "the_cold_water_tank",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_rafters",
+   "b": "grannys_old_tat",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "grannys_old_tat",
+   "b": "top_of_the_loft_ladder",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "top_of_the_loft_ladder",
+   "b": "the_pigeon_loft",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    3,
+    6
+   ],
+   "floor": 7,
+   "note": "high beam door"
+  },
+  {
+   "a": "sooty_chimney_stacks",
+   "b": "slippery_slates",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    8,
+    11
+   ],
+   "floor": 12
+  },
+  {
+   "a": "slippery_slates",
+   "b": "life_in_the_gutter",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "life_in_the_gutter",
+   "b": "bell_tower_buttress",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "bell_tower_buttress",
+   "b": "aerial_alley",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    5,
+    8
+   ],
+   "floor": 9
+  },
+  {
+   "a": "aerial_alley",
+   "b": "weathercock_ridge",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    5,
+    8
+   ],
+   "floor": 9
+  },
+  {
+   "a": "sooty_chimney_stacks",
+   "b": "mothball_alley",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    12,
+    15
+   ],
+   "note": "skylight: upper room row 15 = gap at cols 12-13 (drop) + one-way floor at cols 14-15 (arrival); lower room rows 0-1 open over cols 12-15 with the sheeted wardrobe top at row 4 (cols 12-15)"
+  },
+  {
+   "a": "weathercock_ridge",
+   "b": "top_of_the_loft_ladder",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    5,
+    6
+   ],
+   "note": "second loft ladder out through a roof hatch",
+   "rise": "left"
+  },
+  {
+   "a": "stargazers_dome",
+   "b": "sooty_chimney_stacks",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    22,
+    23
+   ],
+   "note": "observatory rope; drop-back gap in the dome at cols 24-25 onto the chimney-pot top at row 5"
+  },
+  {
+   "a": "bell_ringers_loft",
+   "b": "bell_tower_buttress",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    12,
+    13
+   ],
+   "note": "bell rope; drop-back gap in the loft at cols 10-11 onto the buttress ledge at row 4"
+  },
+  {
+   "a": "ding_dong_belfry",
+   "b": "bell_ringers_loft",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    18,
+    19
+   ],
+   "note": "bell rope; drop-back gap in the belfry at cols 20-21 onto the loft ledge at row 4"
+  },
+  {
+   "a": "countdown_silo",
+   "b": "weathercock_ridge",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    21,
+    22
+   ],
+   "note": "silo gantry stairs",
+   "rise": "right"
+  },
+  {
+   "a": "the_wine_cellar",
+   "b": "the_bottling_line",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_bottling_line",
+   "b": "cellar_steps",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "cellar_steps",
+   "b": "the_stilton_store",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_stilton_store",
+   "b": "the_family_crypt",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_family_crypt",
+   "b": "the_coal_cellar",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_coal_cellar",
+   "b": "knuckle_bone_alley",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "knuckle_bone_alley",
+   "b": "drip_drip_drip",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "drip_drip_drip",
+   "b": "fuse_box_of_doom",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "fuse_box_of_doom",
+   "b": "under_the_conker_roots",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    8,
+    11
+   ],
+   "floor": 12
+  },
+  {
+   "a": "tangled_roots",
+   "b": "under_the_conker_roots",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    8,
+    11
+   ],
+   "note": "secret root shaft: upper room row 15 = gap at cols 8-9 (drop) + one-way floor at cols 10-11 (arrival); lower room rows 0-1 open over cols 8-11 with the root shelf at row 3 (cols 8-11)"
+  },
+  {
+   "a": "the_coal_cellar",
+   "b": "the_pit_cage",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    16,
+    19
+   ],
+   "note": "pit cage: upper room row 15 = gap at cols 16-17 (drop) + one-way floor at cols 18-19 (arrival); lower room rows 0-1 open over cols 16-19 with the headframe landing at row 4 (cols 16-19), reached by the cage lift at cols 12-14"
+  },
+  {
+   "a": "the_stilton_store",
+   "b": "canary_corner",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    22,
+    23
+   ],
+   "note": "escape hatch, one-way up through a one-way floor; prop ledge at row 3 in Canary Corner"
+  },
+  {
+   "a": "canary_corner",
+   "b": "seam_of_despair",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "seam_of_despair",
+   "b": "the_pit_cage",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_pit_cage",
+   "b": "dynamite_depot",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "dynamite_depot",
+   "b": "stalactite_street",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    7,
+    10
+   ],
+   "floor": 11
+  },
+  {
+   "a": "glow_worm_grotto",
+   "b": "echo_chamber",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "echo_chamber",
+   "b": "ee_by_gum_coal_face",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "seam_of_despair",
+   "b": "glow_worm_grotto",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    4,
+    7
+   ],
+   "note": "grotto lift: upper room row 15 = gap at cols 4-5 (drop) + one-way floor at cols 6-7 (arrival); lower room rows 0-1 open over cols 4-7 with the rock shelf at row 4 (cols 4-7), reached by the grotto lift at cols 8-10"
+  },
+  {
+   "a": "dynamite_depot",
+   "b": "ee_by_gum_coal_face",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    27,
+    28
+   ],
+   "note": "plank ramp",
+   "rise": "right"
+  },
+  {
+   "a": "the_gravel_drive",
+   "b": "the_gatehouse",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_gatehouse",
+   "b": "the_village_green",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_village_green",
+   "b": "conker_tree_base_camp",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "conker_tree_base_camp",
+   "b": "the_riverbank",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_riverbank",
+   "b": "humpback_bridge",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "humpback_bridge",
+   "b": "the_far_bank",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "the_far_bank",
+   "b": "open_all_hours",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_rose_terrace",
+   "b": "gatehouse_battlements",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    8,
+    11
+   ],
+   "floor": 12
+  },
+  {
+   "a": "squirrels_larder",
+   "b": "the_great_fork",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    9,
+    12
+   ],
+   "floor": 13
+  },
+  {
+   "a": "the_great_fork",
+   "b": "owls_branch_office",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    5,
+    8
+   ],
+   "floor": 9
+  },
+  {
+   "a": "the_leafy_canopy",
+   "b": "the_rookery",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_rose_terrace",
+   "b": "the_gravel_drive",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    25,
+    26
+   ],
+   "note": "terrace steps",
+   "rise": "right"
+  },
+  {
+   "a": "gatehouse_battlements",
+   "b": "the_gatehouse",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    4,
+    7
+   ],
+   "note": "murder hole: one-way up; lookout ledge at row 3 in the gatehouse, one-way floor in the battlements"
+  },
+  {
+   "a": "the_gravel_drive",
+   "b": "ha_ha_the_sunken_garden",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    18,
+    19
+   ],
+   "note": "the ha-ha: one-way down onto the hedge at row 4"
+  },
+  {
+   "a": "heart_of_conker",
+   "b": "conker_tree_base_camp",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    15,
+    16
+   ],
+   "note": "spiral ramp into the trunk",
+   "rise": "left"
+  },
+  {
+   "a": "the_great_fork",
+   "b": "heart_of_conker",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    15,
+    16
+   ],
+   "note": "vine; drop-back gap in the fork at cols 17-18 onto the knot shelf at row 4"
+  },
+  {
+   "a": "the_leafy_canopy",
+   "b": "the_great_fork",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    12,
+    13
+   ],
+   "note": "one-way jump up through the leaves from the knot ledge at row 3"
+  },
+  {
+   "a": "crows_eye_view",
+   "b": "the_leafy_canopy",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    10,
+    11
+   ],
+   "note": "creeper; drop-back gap in the crow's-eye view at cols 8-9 onto the leaf floor at row 4"
+  },
+  {
+   "a": "the_rookery",
+   "b": "owls_branch_office",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    20,
+    21
+   ],
+   "note": "one-way drop through the leaves onto the twig platform at row 4"
+  },
+  {
+   "a": "conker_tree_base_camp",
+   "b": "tangled_roots",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    20,
+    23
+   ],
+   "note": "burrow: upper room row 15 = gap at cols 20-21 (drop) + one-way floor at cols 22-23 (arrival); lower room rows 0-1 open over cols 20-23 with the root at row 4 (cols 20-23)"
+  },
+  {
+   "a": "humpback_bridge",
+   "b": "under_the_bridge",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    14,
+    15
+   ],
+   "note": "bargee's rope; towpath arrival under the arch at cols 14-15, drop-back gap at cols 16-17 onto the ledge at row 4 (cols 16-19)"
+  },
+  {
+   "a": "the_spanish_drain",
+   "b": "flotsam_junction",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "fatberg_alley",
+   "b": "the_spanish_drain",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_gunge_tank",
+   "b": "fatberg_alley",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_outfall",
+   "b": "the_gunge_tank",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "round_the_u_bend",
+   "b": "the_spanish_drain",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    14,
+    15
+   ],
+   "note": "bottom of the U: one-way drop onto the walkway at row 5"
+  },
+  {
+   "a": "flotsam_junction",
+   "b": "the_rat_kings_throne",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    21,
+    22
+   ],
+   "note": "slimy ramp",
+   "rise": "right"
+  },
+  {
+   "a": "captains_log_cabin",
+   "b": "where_no_wally",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "where_no_wally",
+   "b": "turbo_lift_a",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "turbo_lift_a",
+   "b": "the_captains_chair",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_captains_chair",
+   "b": "red_shirt_lockers",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "red_shirt_lockers",
+   "b": "no_place_like_home",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_brig",
+   "b": "say_aaah_sickbay",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "say_aaah_sickbay",
+   "b": "for_mash_get_smash",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "for_mash_get_smash",
+   "b": "turbo_lift_b",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "turbo_lift_b",
+   "b": "hydroponic_spud_farm",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "hydroponic_spud_farm",
+   "b": "robo_kennels",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "robo_kennels",
+   "b": "molecule_shuffler",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "molecule_shuffler",
+   "b": "space_laundrette",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "torpedo_bay",
+   "b": "hold_everything",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "hold_everything",
+   "b": "turbo_lift_c",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "turbo_lift_c",
+   "b": "rocket_park",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "rocket_park",
+   "b": "she_cannae_take_it",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "she_cannae_take_it",
+   "b": "the_warp_core",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "turbo_lift_a",
+   "b": "turbo_lift_b",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    14,
+    17
+   ],
+   "note": "turbo-lift A/B: upper room row 15 = gap at cols 14-15 (drop) + one-way floor at cols 16-17 (arrival); lower room rows 0-1 open over cols 14-17 with the Deck B platform at row 4 (cols 14-17), reached by the Deck B lift at cols 10-12"
+  },
+  {
+   "a": "turbo_lift_b",
+   "b": "turbo_lift_c",
+   "dir": "down",
+   "kind": "shaft",
+   "cols": [
+    20,
+    23
+   ],
+   "note": "turbo-lift B/C: upper room row 15 = gap at cols 20-21 (drop) + one-way floor at cols 22-23 (arrival); lower room rows 0-1 open over cols 20-23 with the Deck C platform at row 4 (cols 20-23), reached by the Deck C lift at cols 16-18"
+  },
+  {
+   "a": "robo_kennels",
+   "b": "she_cannae_take_it",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    6,
+    7
+   ],
+   "note": "engine-room maintenance hatch, one-way up (one-way floor grating in the kennels)"
+  },
+  {
+   "a": "welcome_to_zarg",
+   "b": "crater_expectations",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "crater_expectations",
+   "b": "the_gloop_lagoon",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    9,
+    12
+   ],
+   "floor": 13
+  },
+  {
+   "a": "the_gloop_lagoon",
+   "b": "ulla_ulla_tripod_hill",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    7,
+    10
+   ],
+   "floor": 11
+  },
+  {
+   "a": "spaghetti_junction",
+   "b": "heres_looking_at_you",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "moon_buggy_motorway",
+   "b": "spaghetti_junction",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "duty_free_departures",
+   "b": "moon_buggy_motorway",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "ulla_ulla_tripod_hill",
+   "b": "heres_looking_at_you",
+   "dir": "down",
+   "kind": "drop",
+   "cols": [
+    24,
+    26
+   ],
+   "note": "crater hole, one-way down onto a ledge at row 4"
+  },
+  {
+   "a": "the_gloop_lagoon",
+   "b": "spaghetti_junction",
+   "dir": "down",
+   "kind": "climb",
+   "cols": [
+    16,
+    17
+   ],
+   "note": "geyser vent, one-way up through a one-way floor"
+  },
+  {
+   "a": "under_the_bridge",
+   "b": "the_beach",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    12
+   ],
+   "floor": 13,
+   "note": "towpath along the river mouth down to the beach"
+  },
+  {
+   "a": "the_beach",
+   "b": "kiss_me_quick_pier",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "kiss_me_quick_pier",
+   "b": "yacht_poop_deck",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14,
+   "note": "gangplank"
+  },
+  {
+   "a": "yacht_poop_deck",
+   "b": "yacht_sharp_end",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    10,
+    13
+   ],
+   "floor": 14
+  },
+  {
+   "a": "open_all_hours",
+   "b": "lighthouse_keepers_lunch",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15,
+   "note": "shop back door onto the headland"
+  },
+  {
+   "a": "open_all_hours",
+   "b": "kiss_me_quick_pier",
+   "dir": "down",
+   "kind": "stairs",
+   "cols": [
+    8,
+    9
+   ],
+   "rise": "left",
+   "note": "promenade steps from the shop down to the pier"
+  },
+  {
+   "a": "shark_infested_shallows",
+   "b": "desert_island_discs",
+   "dir": "right",
+   "kind": "door",
+   "open": [
+    11,
+    14
+   ],
+   "floor": 15
+  },
+  {
+   "a": "the_riverbank",
+   "b": "drop_me_a_line",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    14,
+    17
+   ],
+   "note": "winch rope at cols 14-15 (arrive back on the riverbank floor there); the well mouth beside it (gap cols 16-17 in the riverbank floor) drops onto the well-head ledge at row 4"
+  },
+  {
+   "a": "drop_me_a_line",
+   "b": "well_beyond_help",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    20,
+    27
+   ],
+   "note": "shaft rope at cols 20-21 (arrival floor 15 there); the well mouth beside it (gap cols 22-27) drops onto the row-4 ledge (cols 22-25)"
+  },
+  {
+   "a": "well_beyond_help",
+   "b": "deep_joy",
+   "dir": "down",
+   "kind": "rope",
+   "cols": [
+    8,
+    15
+   ],
+   "note": "bottom rope at cols 8-9 (arrival floor 15 there); the hole beside it (gap cols 10-15) drops onto the Deep Joy shelf at row 5 (cols 8-15)"
+  }
+ ],
+ "sealed": [
+  [
+   "aunt_mauds_boudoir",
+   "the_rogues_gallery"
+  ],
+  [
+   "master_bedroom",
+   "shhh_the_library"
+  ],
+  [
+   "walk_in_wardrobe",
+   "pot_black_billiard_room"
+  ],
+  [
+   "the_bathroom",
+   "the_drawing_room"
+  ],
+  [
+   "the_airing_cupboard",
+   "the_music_room"
+  ],
+  [
+   "the_spare_room",
+   "the_trophy_room"
+  ],
+  [
+   "the_rogues_gallery",
+   "the_conservatory"
+  ],
+  [
+   "shhh_the_library",
+   "the_dining_room"
+  ],
+  [
+   "pot_black_billiard_room",
+   "the_drawing_room"
+  ],
+  [
+   "the_drawing_room",
+   "gentlemens_smoking_room"
+  ],
+  [
+   "the_music_room",
+   "the_cloakroom"
+  ],
+  [
+   "the_trophy_room",
+   "the_front_porch"
+  ],
+  [
+   "the_conservatory",
+   "the_laundry"
+  ],
+  [
+   "the_dining_room",
+   "the_turkish_bath"
+  ],
+  [
+   "gentlemens_smoking_room",
+   "the_scullery"
+  ],
+  [
+   "the_great_hall",
+   "the_boiler_room"
+  ],
+  [
+   "the_front_porch",
+   "the_coal_hole"
+  ],
+  [
+   "the_turkish_bath",
+   "the_kitchen"
+  ],
+  [
+   "the_turkish_bath",
+   "the_wine_cellar"
+  ],
+  [
+   "the_kitchen",
+   "the_bottling_line"
+  ],
+  [
+   "servants_hall",
+   "the_stilton_store"
+  ],
+  [
+   "the_boiler_room",
+   "the_family_crypt"
+  ],
+  [
+   "mothball_alley",
+   "aunt_mauds_boudoir"
+  ],
+  [
+   "dads_model_railway",
+   "master_bedroom"
+  ],
+  [
+   "the_cold_water_tank",
+   "the_rafters"
+  ],
+  [
+   "the_cold_water_tank",
+   "walk_in_wardrobe"
+  ],
+  [
+   "the_rafters",
+   "the_bathroom"
+  ],
+  [
+   "the_pigeon_loft",
+   "the_spare_room"
+  ],
+  [
+   "slippery_slates",
+   "dads_model_railway"
+  ],
+  [
+   "life_in_the_gutter",
+   "the_cold_water_tank"
+  ],
+  [
+   "bell_tower_buttress",
+   "the_rafters"
+  ],
+  [
+   "aerial_alley",
+   "grannys_old_tat"
+  ],
+  [
+   "the_family_crypt",
+   "seam_of_despair"
+  ],
+  [
+   "knuckle_bone_alley",
+   "dynamite_depot"
+  ],
+  [
+   "drip_drip_drip",
+   "stalactite_street"
+  ],
+  [
+   "the_pit_cage",
+   "echo_chamber"
+  ],
+  [
+   "ha_ha_the_sunken_garden",
+   "knuckle_bone_alley"
+  ],
+  [
+   "captains_log_cabin",
+   "say_aaah_sickbay"
+  ],
+  [
+   "where_no_wally",
+   "for_mash_get_smash"
+  ],
+  [
+   "the_captains_chair",
+   "hydroponic_spud_farm"
+  ],
+  [
+   "red_shirt_lockers",
+   "robo_kennels"
+  ],
+  [
+   "no_place_like_home",
+   "molecule_shuffler"
+  ],
+  [
+   "say_aaah_sickbay",
+   "torpedo_bay"
+  ],
+  [
+   "for_mash_get_smash",
+   "hold_everything"
+  ],
+  [
+   "hydroponic_spud_farm",
+   "rocket_park"
+  ],
+  [
+   "molecule_shuffler",
+   "the_warp_core"
+  ],
+  [
+   "welcome_to_zarg",
+   "duty_free_departures"
+  ],
+  [
+   "crater_expectations",
+   "moon_buggy_motorway"
+  ],
+  [
+   "the_far_bank",
+   "the_beach"
+  ],
+  [
+   "lighthouse_keepers_lunch",
+   "yacht_poop_deck"
+  ],
+  [
+   "tangled_roots",
+   "drop_me_a_line"
+  ],
+  [
+   "drop_me_a_line",
+   "under_the_bridge"
+  ],
+  [
+   "under_the_conker_roots",
+   "well_beyond_help"
+  ]
+ ],
+ "links": [
+  {
+   "from": "the_turkish_bath",
+   "to": "round_the_u_bend",
+   "kind": "drain",
+   "note": "Plughole grate in the drained plunge pool (cols 15-16). One-way; signposted NO RETURN - SEWERS. Lands on the pipe ledge at row 4."
+  },
+  {
+   "from": "the_outfall",
+   "to": "the_beach",
+   "kind": "outfall",
+   "note": "Outfall grate (cols 4-6). One-way out of the cliff pipe onto the dune at row 5 of the Beach; signposted BEACH ->."
+  },
+  {
+   "from": "yacht_sharp_end",
+   "to": "desert_island_discs",
+   "kind": "yacht",
+   "note": "Needs the trip switch thrown (fuse_box_of_doom) and all yacht items collected; sail raised + ALL ABOARD pennant = ready. One-way voyage; lands on the island sand (floor 15, cols 20-27)."
+  },
+  {
+   "from": "desert_island_discs",
+   "to": "molecule_shuffler",
+   "kind": "teleport",
+   "note": "Crashed escape-pod pad (cols 4-7), one-way to the starship arrivals pad; the island has no other exit."
+  },
+  {
+   "from": "countdown_silo",
+   "to": "rocket_park",
+   "kind": "rocket",
+   "note": "Launches once all 3 silo items are taken and Wally steps into the capsule; clock stops during the flight. One-way."
+  },
+  {
+   "from": "molecule_shuffler",
+   "to": "welcome_to_zarg",
+   "kind": "teleport",
+   "note": "Departures dais, one-way to the planet arrival pad."
+  },
+  {
+   "from": "duty_free_departures",
+   "to": "molecule_shuffler",
+   "kind": "teleport",
+   "note": "Planet departures pad, one-way back to the starship arrivals pad (closes the planet loop)."
+  },
+  {
+   "from": "no_place_like_home",
+   "to": "the_bathroom",
+   "kind": "teleport",
+   "note": "Return pad, one-way home to the start room (floor 15, col 5). The only way back from space."
+  },
+  {
+   "from": "molecule_shuffler",
+   "to": "the_bathroom",
+   "kind": "teleport",
+   "note": "HOME pad in the transporter room (second way home; removes the single point of failure on the grav-tube climb)"
+  }
+ ],
+ "notes": "CHALLENGE-FIRST DESIGN. The Bathroom (10,8) is the hub: every room within two screens of it is difficulty 1-2, and difficulty ramps outward by distance and depth - mansion 1-3, attic/cellars/near grounds 2-4, roof/mines/coast/sewers 3-4, tower tops, tree tip, well, warp core and the far side of the planet 5. Each region has one signature mechanic so it feels distinct: mansion = staircases/ramps, roof = pitched ramps + wind arrows, towers = ropes, cellars = conveyors + crossbow arrows, mines = lifts + crushers, well = rope descent, grounds = diagonal guardians (tree = vines + spiral ramp), coast = arrows + bobbing lifts, sewers = conveyor currents, starship = turbo-lifts + force fields, planet = crater ramps + diagonals.\n\nLAYOUT. One grid 23x18. Mansion 8x4 block in the middle (cols 6-13, rows 8-11) with attic and roof stacked above and the towers poking up at rows 4-5; the cellar corridor (row 12) runs east under the grounds, the mines hang below it and the well plunges to row 17. Grounds spread east at ground level (row 10) with the 9-room conker tree rising to row 6 and its roots touching the cellars. The coast strings west from the back door along row 11. Remote regions sit apart with no walkable contact: starship across the top (rows 0-2), planet top-right, sewers bottom-left.\n\nCONNECTIVITY. The mansion floors join by two full staircases (servants back stairs at col 6, grand staircase at col 12) plus the servants stair (col 11, ground/lower). Region links: loft ladder and loft hatch (mansion->attic), skylight and loft-ladder hatch (attic<->roof), ropes and gantry stairs (roof->towers), scullery steps and coal chute (mansion->cellars), pit cage + escape hatch (cellars<->mines), ropes (mines<->well), front door, French windows and ha-ha (mansion<->grounds), root shaft (tree<->cellars), back door (mansion<->coast). Every grid-adjacent pair that is not a door is sealed.\n\nVERTICAL CONTRACTS. shaft = 4-col span [c0,c1]: upper room row 15 has a 2-col drop gap at c0..c0+1 and a one-way floor at c0+2..c1 where climbers arrive (so arrivals never land over the gap); lower room rows 0-1 open across the span with a landing/jump-off ledge at row 3-4 spanning it, usually served by a lift beside it. rope = rope in the lower room reaching row 0 at cols; upper room has a floor-15 platform under those cols plus a 2-col drop-back gap beside it (given in each door note) and the lower room catches that drop at row <= 6. climb = ledge at row 3 in the lower room under a one-way floor in the upper room. drop = gap in the upper row 15 onto a landing at row 4-5 below.\n\nONE-WAY TRIPS (all signposted in-room): plughole drain (Turkish Bath -> sewers), outfall (sewers -> Beach), yacht (-> Desert Island Discs, gated by the Fuse Box of Doom trip switch; the lighthouse lamp flashes and the sail rises when ready), escape pod (island -> starship), rocket (Countdown Silo -> Rocket Park, gated by the silo items), Molecule Shuffler -> planet, planet departures -> starship, and There's No Place Like Home -> Bathroom. Every one-way chain ends back at the hub: sewers->beach->back door; island->ship->home pad; planet->ship->home pad. Local one-ways (box-room trapdoor, coal chute, ha-ha, murder hole, canopy climb, rookery drop, mine escape hatch, engine hatch, planet crater hole and geyser) always sit inside a loop.\n\nSECRET SHORTCUTS: dumbwaiter lift (Kitchen <-> Servery <-> Pot Black Billiard Room), loft hatch (Airing Cupboard <-> Granny's Old Tat, right next to the start), box-room trapdoor back to the Nursery, French windows (Trophy Room <-> Rose Terrace), the ha-ha drop from the drive into the lower halls, the coal chute, the conker-root shaft (Tangled Roots <-> Under the Conker Roots, joining grounds and cellars) and the Canary Corner escape hatch out of the mines.\n\nCRITICAL PATH (150 of 175 items). 1) Mansion sweep from the Bathroom: top floor, grand staircase down, ground floor, lower halls (~38 items, difficulty 1-3). 2) Grounds via the front door: drive, gatehouse, village green, conker tree (trunk spiral -> vine -> fork -> canopy -> crow's-eye view), river, bridge, corner shop (~26). 3) Cellars via the scullery steps east to the Fuse Box of Doom (throw the trip switch), back through the pit cage into the mines and down the well; out by the Canary Corner hatch or the root shaft (~30). 4) Attic via the loft ladder, over the roof ramps to the bell tower ropes and observatory, then clear the Countdown Silo and ride the rocket (~27). 5) Starship: turbo-lifts, force fields, warp core; the Molecule Shuffler loop through Planet Zarg; home pad to the Bathroom (~34). 6) Back door -> beach -> pier -> lighthouse -> yacht (items + trip switch) -> island -> escape pod -> starship -> home pad (~10). 7) Optional: Turkish Bath plughole through the sewers to the outfall (8). 8) Master Bedroom: Mrs Mop has gone, touch the bed, forced run right through the Walk-in Wardrobe to the Bathroom toilet -> Oh Heck! It's Monday Morning!\n\nPACING. Each excursion is a loop that returns to the mansion, so the player is never far from a known safe route; the 25 spare items live mostly in the hardest dead ends (Ding Dong Belfry, A Crow's-Eye View, Deep Joy, Warp Core, Stalactite Street, the Rat King, the Brig) so completionists get the toughest challenges while the 150 target stays fair. The well gag is fatal only when you overshoot the rope into the open shaft; respawn is always on the well-head rim (JSW II last-safe-ground rule + 2 s invulnerability).\n\nPHYSICS CONVENTIONS used in every theme: ledge chains rise at most 2 rows per step (jump reach), walk-off descents are at most 4 rows, items sit on a surface or no more than 5 rows above one, every catch ledge under a drop/rope/shaft has both a safe way down (<= 4-row steps) and a way back up (<= 2-row steps), arrivals from below always land on a row-15 floor with rows 13-14 clear, and rope tops stay clear of walls (catch ledges near ropes are one-way floors). Row numbers in themes are indicative; the edge contracts in \"doors\" are binding.\n\nENDING PATH: Master Bedroom -> Walk-in Wardrobe -> Bathroom along a flat floor 15 with no pits, nasties or guardian paths on the run line; the bed is a right conveyor. The nightmare room is off-grid (unreachableOk) and entered only via the toilet after winning.\n\nFINAL-PLAN CONVENTIONS (binding):\n- Edges: at every shared edge, everything outside the listed opening(s) is WALL in both edge columns on both sides (validate checks col 31 vs col 0 row by row).\n- Stairs doors: \"cols\" is a 2-column overlap span and \"rise\" gives the direction the stairs climb. Rise right: the LOWER room's ramp cells at (c0,1) and (c1,0), the UPPER room's at (c0,15) and (c1,14); rise left: lower (c1,1),(c0,0), upper (c1,15),(c0,14). The upper room repeats the lower room's top two ramp cells (Wally re-enters from below two rows above the geometric continuation). Verified by tools/test-stairs.js.\n- Rope doors: the rope hangs in the LOWER room from row 0 inside the span; the upper room has a floor-15 arrival spot above the rope columns and (optionally) a separate drop-back gap beside it.\n- Shafts: 4-col span, drop gap at c0..c0+1, one-way arrival floor at c0+2..c1, catch ledge at row 3-4 in the lower room. Lifts go beside static shelves, never under a drop.\n- Vary ledge spacing between rooms (not always every 2 rows).\n- Guardians: write them as sprite (h|v|d) with bounds; paths only over air; never parked on an arrival spot, pad or the only route.\n- One rope per room (engine limit). Housekeeper is static. Yacht portal requires the 'trip' flag and both yacht rooms cleared.\n- Layout note: the coast lies EAST of the grounds (reached down the river under the bridge, or via the corner shop's promenade steps); the well is a garden well beneath the riverbank."
+}
