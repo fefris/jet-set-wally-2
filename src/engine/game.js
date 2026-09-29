@@ -146,7 +146,10 @@
       var r2 = w.y / 8 + 2;
       var a = env.cell(w.col, r2), b = env.cell(w.col + 1, r2);
       var onLift = this.overlay && (this.overlay[r2 * 32 + w.col] || this.overlay[r2 * 32 + w.col + 1]);
-      if (a !== T.CONVEYOR && b !== T.CONVEYOR && !onLift && !this.running) this.saveRespawn();
+      // only real, safe footing: something solid underfoot and no nasty (the walk-off frame is still airborne 0
+      // with air under both feet - saving there caused endless fall-death respawn loops)
+      var supported = (a !== T.AIR || b !== T.AIR) && a !== T.NASTY && b !== T.NASTY;
+      if (supported && a !== T.CONVEYOR && b !== T.CONVEYOR && !onLift && !this.running) this.saveRespawn();
     }
 
     // 8. music note (2 frames per note)
