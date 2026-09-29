@@ -11,6 +11,8 @@ items scattered around the mansion, its grounds, the cellars and mines, the coas
 
 ## Play
 
+**Play online:** https://fefris.github.io/jet-set-wally-2/
+
 Open `index.html` in a browser (no server or build needed), or the single-file build `dist/jetsetwally2.html`.
 
 | Action | Keys |
